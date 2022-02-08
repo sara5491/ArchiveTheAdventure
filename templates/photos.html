@@ -1,28 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for photo in photos %}
-        {{ photo.photo_name }}<br>
-        {{ photo.category_name }}<br>
-        {{ photo.photo_description }}<br>
-        {{ photo.date_taken }}<br>
-    {% endfor %}
-
-    <ul class="collapsible">
+<ul class="collapsible">
+        {% for photo in photos %}
         <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>First</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-header white-text light-blue darken-4 text-shadow">
+                <i class="fas fa-caret-down"></i>
+                <strong>{{ photo.photo_name }}</strong> : {{ photo.date_taken }}
+            </div>
+            <div class="collapsible-body">
+                <strong>{{ photo.category_name }}</strong>
+                <p>{{ photo.photo_description }}</p>
+            </div>
         </li>
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>Second</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4 text-shadow"><i class="fas fa-caret-down"></i>Third</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
+        {% endfor %}
     </ul>
-    
+
     <div class="carousel">
         <a class="carousel-item" href="#one!"><img src="https://picsum.photos/id/237/200/300"></a>
         <a class="carousel-item" href="#two!"><img src="https://picsum.photos/id/237/200/300"></a>
