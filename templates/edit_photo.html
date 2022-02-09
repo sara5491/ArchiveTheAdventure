@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="light-blue-text text-darken-4 center-align">Edit Photo</h3>
+
+    <div class="row card-panel green lighten-5">
+        <form class="col s12" method="POST" action="{{ url_for('edit_photo', photo_id=photo._id) }}">
+            <!-- contintent selection -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-earth prefix light-blue-text text-darken-4"></i>
+                    <select id="category_name" name="category_name" class="validate" required>
+                      <option value="" disabled selected>Choose Continent</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="category_name">Continent</label>
+                  </div>
+            </div>
+            <!-- photo name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                    <input id="photo_name" name="photo_name" minlength="3" maxlength="20"
+                        type="text" class="validate" required>
+                    <label for="photo_name">Photo Name</label>
+                </div>
+            </div>
+            <!-- photo description -->
+            <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                <textarea id="photo_description" name="photo_description" minlength="5"
+                    maxlength="100" class="materialize-textarea validate" required></textarea>
+                <label for="photo_description">Photo Description</label>
+            </div>
+            </div>
+            <!-- date photo taken -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                    <input id="date_taken" name="date_taken" type="text" class="datepicker validate" required>
+                    <label for="date_taken">Date Taken</label>
+                </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large light-green darken-1 text-shadow">
+                        Edit Photo <i class="fas fa-edit right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

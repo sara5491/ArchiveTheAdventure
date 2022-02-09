@@ -117,6 +117,13 @@ def add_photo():
     return render_template("add_photo.html", categories=categories)
 
 
+@app.route("/edit_photo/<photo_id>", methods=["GET", "POST"])
+def edit_photo(photo_id):
+    photo = mongo.db.photos.find_one({"_id": ObjectId(photo_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_photo.html", photo=photo, categories=categories)
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
