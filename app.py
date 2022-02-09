@@ -101,7 +101,8 @@ def logout():
 
 @app.route("/add_photo")
 def add_photo():
-    return render_template("add_photo.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_photo.html", categories=categories)
 
 
 if __name__ == "__main__":
