@@ -99,8 +99,20 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_photo")
+@app.route("/add_photo", methods=["GET", "POST"])
 def add_photo():
+    if request.method == "POST":
+        photo = {
+            "category_name": request.form.get("category_name"),
+            "photo_name": request.form.get("photo_name"),
+            "photo_description": request.form.get("photo_description"),
+            "date_taken": request.form.get("date_taken"),
+            "created_by": session["user"]
+        }
+        mongo.db.photos.insert_one(photo)
+        flash("Photo Successfully Added")
+        return redirect(url_for("get_photos"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_photo.html", categories=categories)
 
