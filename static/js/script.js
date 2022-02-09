@@ -3,8 +3,9 @@ $(document).ready(function () {
     $(".collapsible").collapsible();
     $(".tooltipped").tooltip();
     $(".datepicker").datepicker({
+        maxDate: new Date(),
+        yearRange: [2010,2022],
         format: "dd mmmm, yyyy",
-        yearRange: "2000:2022",
         showClearBtn: true,
         i18n: {
             done: "Select"
