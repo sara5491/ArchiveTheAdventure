@@ -119,6 +119,19 @@ def add_photo():
 
 @app.route("/edit_photo/<photo_id>", methods=["GET", "POST"])
 def edit_photo(photo_id):
+    if request.method == "POST":
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "photo_name": request.form.get("photo_name"),
+            "photo_description": request.form.get("photo_description"),
+            "date_taken": request.form.get("date_taken"),
+            "created_by": session["user"]
+        }
+        mongo.db.photos.update_one({"_id": ObjectId(photo_id)}, {
+        "$set": submit
+        })
+        flash("Photo Successfully Updated")
+
     photo = mongo.db.photos.find_one({"_id": ObjectId(photo_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_photo.html", photo=photo, categories=categories)
