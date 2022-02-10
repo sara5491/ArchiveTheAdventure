@@ -10,9 +10,13 @@
                 <div class="input-field col s12">
                     <i class="fas fa-earth prefix light-blue-text text-darken-4"></i>
                     <select id="category_name" name="category_name" class="validate" required>
-                      <option value="" disabled selected>Choose Continent</option>
+                      <option value="" disabled>Choose Continent</option>
                         {% for category in categories %}
-                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% if category.category_name == photo.category_name %}
+                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                            {% else %}
+                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                            {% endif %}
                         {% endfor %}
                     </select>
                     <label for="category_name">Continent</label>
@@ -23,7 +27,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
                     <input id="photo_name" name="photo_name" minlength="3" maxlength="20"
-                        type="text" class="validate" required>
+                        value="{{ photo.photo_name }}" type="text" class="validate" required>
                     <label for="photo_name">Photo Name</label>
                 </div>
             </div>
@@ -32,7 +36,9 @@
             <div class="input-field col s12">
                 <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
                 <textarea id="photo_description" name="photo_description" minlength="5"
-                    maxlength="100" class="materialize-textarea validate" required></textarea>
+                    maxlength="100" class="materialize-textarea validate" required>
+                    {{- photo.photo_description -}}
+                </textarea>
                 <label for="photo_description">Photo Description</label>
             </div>
             </div>
@@ -40,12 +46,17 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
-                    <input id="date_taken" name="date_taken" type="text" class="datepicker validate" required>
+                    <input id="date_taken" name="date_taken" type="text"
+                        value= "{{ photo.date_taken }}" class="datepicker validate" required>
                     <label for="date_taken">Date Taken</label>
                 </div>
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
+                    <!-- cancel button -->
+                    <a href="{{ url_for('get_photos') }}" class="btn-large red text-shadow">
+                        Cancel <i class="fas fa-times-circle right"></i>
+                    </a>
                     <button type="submit" class="btn-large light-green darken-1 text-shadow">
                         Edit Photo <i class="fas fa-edit right"></i>
                     </button>
