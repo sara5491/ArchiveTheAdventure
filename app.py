@@ -137,6 +137,13 @@ def edit_photo(photo_id):
     return render_template("edit_photo.html", photo=photo, categories=categories)
 
 
+@app.route("/delete_photo/<photo_id>")
+def delete_photo(photo_id):
+    mongo.db.photos.delete_one({"_id": ObjectId(photo_id)})
+    flash("Photo Successfully Deleted")
+    return redirect(url_for("get_photos"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
