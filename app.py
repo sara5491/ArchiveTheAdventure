@@ -106,6 +106,17 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Contact
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    categories = list(mongo.db.categories.find())
+    if request.method == "POST":
+        email = request.form.get("email")
+        message = request.form.get("message")
+
+    return render_template("contact.html", categories=categories)
+
+
 @app.route("/add_photo", methods=["GET", "POST"])
 def add_photo():
     if request.method == "POST":
