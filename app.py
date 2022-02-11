@@ -3,6 +3,7 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
+from flask_mail import Mail, Message
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
@@ -10,6 +11,7 @@ if os.path.exists("env.py"):
 
 
 app = Flask(__name__)
+
 
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
@@ -109,12 +111,10 @@ def logout():
 # Contact
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
-    categories = list(mongo.db.categories.find())
     if request.method == "POST":
-        email = request.form.get("email")
-        message = request.form.get("message")
+        return "Sent message"
 
-    return render_template("contact.html", categories=categories)
+    return render_template("contact.html")
 
 
 @app.route("/add_photo", methods=["GET", "POST"])
