@@ -1,10 +1,10 @@
 {% extends "base.html" %}
+
 {% block content %}
 
-<section id="contact-us-form"> 
     <div class="container-fluid display-container">
         <div class="row display-row">
-            <form id="contact-form" class="col s12 l8 offset-l2 " method="POST">
+            <form id="contact-form" class="col s12 l8 offset-l2 " method="POST" action="{{ url_for('contact')}}">
                 <div class="card-panel form-card padding-landscape">
                     <!--Email-->
                     <div class="row">
@@ -32,5 +32,4 @@
             </form>
         </div>
     </div>
-</section>
 {% endblock %}

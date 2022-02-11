@@ -16,7 +16,14 @@ app = Flask(__name__)
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'archivetheadventure@gmail.com'
+app.config['MAIL_PASSWORD'] = os.environ.get("MAIL_PASSWORD")
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
 
+mail = Mail(app)
 mongo = PyMongo(app)
 
 
@@ -111,10 +118,21 @@ def logout():
 # Contact
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
+    categories = list(mongo.db.categories.find())
     if request.method == "POST":
-        return "Sent message"
+        email = request.form.get("email")
+        message = request.form.get("message")
 
-    return render_template("contact.html")
+        msg = Message(email,
+                      sender=("Archive The Adventure", email),
+                      recipients=['archivetheadventure@gmail.com'])
+
+        msg.body = message
+        mail.send(msg)
+        flash("Email Sent Successfully")
+        return redirect(url_for("contact"))
+
+    return render_template("contact.html", categories=categories)
 
 
 @app.route("/add_photo", methods=["GET", "POST"])
