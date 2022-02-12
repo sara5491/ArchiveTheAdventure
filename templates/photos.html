@@ -21,68 +21,50 @@
         </form>
     </div>
 
+
 <section>
-
-    <div class="container">
-        <div class="row cards-row-flex">
             {% if photos|length > 0 %}
-            {% for photo in photos %}
-            <div class="col s12 m6 l3 xl3 card-column-flex">
-                <div class="card hoverable">
-                    <div class="card-image">
-                        <img class="single-photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
-                    <div class="card-content">
-                        <div class="card-title center-align title-font">
-                            <h2>{{ photo.photo_name }}</h2>
+                {% for photo in photos %}
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img class="photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
                         </div>
-
-                    </div>
-                    </div>
+                        <div class="card-content">
+                            <div class="card-title center-align title-font">
+                                <h2>{{ photo.photo_name }}</h2>
+                            </div>
+                            <div class="center-align category-name-font">
+                                <h3> {{ photo.category_name }} </h3><br>
+                                <h3> date taken: {{ photo.date_taken }} </h3>
+                            </div>
+                            <p class="created-font">
+                                <em>Taken by: {{ photo.created_by }}</em>
+                            </p>
+                        </div>
+                        <div class="card-action center align">
+                        {% if session.user|lower == photo.created_by|lower %}
+                        <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
+                         <!-- Modal Trigger -->
+                         <a class="waves-effect waves-light btn modal-trigger grey" href="#deletemodal-{{loop.index}}">Delete</a>
+                         <!-- Modal Structure -->
+                         <div id="deletemodal-{{loop.index}}" class="modal">
+                            <div class="modal-content">
+                                <h4>Remove a photo?</h4>
+                                <p>Are you sure you want to remove a photo from the database?</p>
+                             </div>
+                             <div class="modal-footer">
+                                 <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="modal-close waves-effect waves-white btn-flat">Delete</a>
+                                 <a href="{{ url_for('get_photos') }}" class="modal-close waves-effect waves-white btn-flat">No, take me back!</a> 
+                             </div>
+                        {% endif %}
                 </div>
-            </div>
-        </div>
-
-                               <div class="card-image waves-effect waves-block waves-light">
-                                    <div class="card-action center-align">
-                                        {% if session.user|lower == photo.created_by|lower %}
-                                        <a href="#delete_photo" class="btn-small red-btn modal-trigger">Delete</a>
-                                        <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
-                                        {% endif %}
-                                                         <!-- Modal Structure --> 
-                                                        <div id="delete_photo" class="modal">
-                                                            <div class="modal-content">
-                                                            <h4>Modal Header</h4>
-                                                            <p>This action will permanently delete this photo from the database. Are you sure you
-                                                                wish to
-                                                                do this?</p>
-                                                            </div>
-                                                            <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="btn-small green accent-4">Delete</a>
-                                                            <a href="#!" class="modal-close btn blue darken-4">No</a>
-                                                        </div>
-                            <img src="{{ photo.image_url }}" class="img-card" alt="alt text">
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <h4>{{ photo.photo_name }}</h4>
-                                    <h4>{{ photo.category_name }}</h4>
-                                </h4>
-                                <p class="">
-                                    <h4>date taken: {{ photo.date_taken }}</h4>
-                                </p>
-                            </div>
-                            <div class="card-price">
-                                by: {{ photo.created_by }}
-                            </div>
+                {% endfor %}
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-
-    {% else %}
-        <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
-    {% endif %}
-
+            {% else %}
+                <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+            {% endif %}
 </section>
 {% endblock %}
