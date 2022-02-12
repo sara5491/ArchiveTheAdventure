@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".collapsible").collapsible();
     $(".tooltipped").tooltip();
     $('select').formSelect();
-    $('.carousel').carousel();
+    $('.modal').modal({});
     $(".datepicker").datepicker({
         maxDate: new Date(),
         yearRange: [2010,2022],

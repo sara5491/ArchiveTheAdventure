@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h3 class="light-blue-text text-darken-4 center-align">All Photos</h3>
+    <h3 class="light-blue-text text-darken-4 center-align">All photos</h3>
 
-    <div class="row card-panel green lighten-5">
+    <div class="row card-panel grey lighten-5">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
-                    <i class="fas fa-search prefix light-green-text text-darken-4"></i>
+                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                    <label for="query">Search Photos</label>
+                    <label for="query">Search photos</label>
                 </div>
                 <div class="col s12 m4">
                     <a href="{{ url_for('get_photos') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-green darken-1 btn text-shadow">
+                    <button type="submit" class="light-blue darken-1 btn text-shadow">
                         <i class="fas fa-search left"></i> Search
                     </button>
                 </div>
@@ -21,28 +21,39 @@
         </form>
     </div>
 
-<section>
-    <div class="container">
-        {% if photos|length > 0 %}
-
+    {% if photos|length > 0 %}
+    <div class="card">
         {% for photo in photos %}
-        <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="{{ photo.image_url }}" alt="{{ photo.name }}"/>
+        <div class="card-image waves-effect waves-block waves-light">
+            <div class="card-action center-align">
+                {% if session.user|lower == photo.created_by|lower %}
+                <a href="#delete_photo{{photo._id}}" class="btn-small red-btn modal-trigger">Delete</a>
+                <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
+                {% endif %}
             </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                <div class="col s9">
+                    <strong>{{ photo.photo_name }}</strong> : {{ photo.date_taken }}
+                </div>
             </div>
-          </div>
-        {% if session.user|lower == photo.created_by|lower %}
-          <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="btn-small green accent-4">Delete</a>
-          <a href="{{ url_for('edit_photo', photo_id=photo._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-        {% endif %}
+            <div class="collapsible-body">
+                <strong>{{ photo.category_name }}</strong>
+                <p>{{ photo.photo_description }}</p>
+                <p><em>by: {{ photo.created_by }}</em></p>
+            </div>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
         {% endfor %}
-    
+    </ul>
     {% else %}
-          <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
+        <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
     {% endif %}
-    </div>
+
 {% endblock %}
