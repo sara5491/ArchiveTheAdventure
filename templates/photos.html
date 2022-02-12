@@ -42,6 +42,16 @@
                 <p>{{ photo.photo_description }}</p>
                 <p><em>added by: {{ photo.created_by }}</em></p>
             </div>
+            <div class="col s12 m6 l3 xl3 card-column-flex">
+                <div class="cards cards-flex">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      {% if photo.image_url %}
+                      <img class="single-photo-image" src="{{ photo.image_url }}" alt="{{ photo.name }}"/>
+                      {% else %}
+                      <img class="single-photo-image" src="{{ url_for('static', filename='images/image-replacement.jpg') }}"
+                        alt="Replacement image"/>
+                      {% endif %}
         </li>
         {% endfor %}
     </ul>

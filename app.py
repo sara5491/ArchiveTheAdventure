@@ -143,6 +143,7 @@ def add_photo():
             "photo_name": request.form.get("photo_name"),
             "photo_description": request.form.get("photo_description"),
             "date_taken": request.form.get("date_taken"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
         mongo.db.photos.insert_one(photo)
@@ -161,6 +162,7 @@ def edit_photo(photo_id):
             "photo_name": request.form.get("photo_name"),
             "photo_description": request.form.get("photo_description"),
             "date_taken": request.form.get("date_taken"),
+            "image_url": request.form.get("image_url"),
             "created_by": session["user"]
         }
         mongo.db.photos.update_one({"_id": ObjectId(photo_id)}, {
