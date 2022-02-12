@@ -124,7 +124,7 @@ def contact():
         message = request.form.get("message")
 
         msg = Message(email,
-                      sender=("Archive The Adventure", email),
+                      sender=("email"),
                       recipients=['archivetheadventure@gmail.com'])
 
         msg.body = message
