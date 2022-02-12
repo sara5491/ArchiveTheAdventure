@@ -14,3 +14,28 @@
     margin: 5px;
     line-height: 40px;
 }
+
+
+
+/* FOOTER */
+
+footer {
+    height: 80px;
+    background-color: indigo;
+  }
+  
+  .social-networks {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .social-networks li {
+    display: inline;
+  }
+  
+  .social-networks i {
+    font-size: 150%;
+    margin: 1%;
+    padding: 10px;
+    color: white;
+  }

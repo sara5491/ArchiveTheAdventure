@@ -21,42 +21,68 @@
         </form>
     </div>
 
-    {% if photos|length > 0 %}
-    <div class="card">
-        {% for photo in photos %}
-        <div class="card-image waves-effect waves-block waves-light">
-            <div class="card-action center-align">
-                {% if session.user|lower == photo.created_by|lower %}
-                <a href="#delete_photo" class="btn-small red-btn modal-trigger">Delete</a>
-                <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
-                {% endif %}
-                                <!-- Modal Structure -->
-                                <div id="delete_photo" class="modal">
-                                    <div class="modal-content">
-                                    <h4>Modal Header</h4>
-                                    <p>This action will permanently delete this photo from the database. Are you sure you
-                                        wish to
-                                        do this?</p>
-                                    </div>
-                                    <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="btn-small green accent-4">Delete</a>
-                                    <a href="#!" class="modal-close btn blue darken-4">No</a>
-                                    </div>
-                                </div>
-            </div>
-                <div class="col s9">
-                    <strong>{{ photo.photo_name }}</strong> : {{ photo.date_taken }}
+<section>
+
+    <div class="container">
+        <div class="row cards-row-flex">
+            {% if photos|length > 0 %}
+            {% for photo in photos %}
+            <div class="col s12 m6 l3 xl3 card-column-flex">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img class="single-photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
+                    <div class="card-content">
+                        <div class="card-title center-align title-font">
+                            <h2>{{ photo.photo_name }}</h2>
+                        </div>
+
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div class="collapsible-body">
-                <strong>{{ photo.category_name }}</strong>
-                <p>{{ photo.photo_description }}</p>
-                <p><em>by: {{ photo.created_by }}</em></p>
-            </div>
+        </div>
 
-        {% endfor %}
-    </ul>
+                               <div class="card-image waves-effect waves-block waves-light">
+                                    <div class="card-action center-align">
+                                        {% if session.user|lower == photo.created_by|lower %}
+                                        <a href="#delete_photo" class="btn-small red-btn modal-trigger">Delete</a>
+                                        <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
+                                        {% endif %}
+                                                         <!-- Modal Structure --> 
+                                                        <div id="delete_photo" class="modal">
+                                                            <div class="modal-content">
+                                                            <h4>Modal Header</h4>
+                                                            <p>This action will permanently delete this photo from the database. Are you sure you
+                                                                wish to
+                                                                do this?</p>
+                                                            </div>
+                                                            <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="btn-small green accent-4">Delete</a>
+                                                            <a href="#!" class="modal-close btn blue darken-4">No</a>
+                                                        </div>
+                            <img src="{{ photo.image_url }}" class="img-card" alt="alt text">
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <h4>{{ photo.photo_name }}</h4>
+                                    <h4>{{ photo.category_name }}</h4>
+                                </h4>
+                                <p class="">
+                                    <h4>date taken: {{ photo.date_taken }}</h4>
+                                </p>
+                            </div>
+                            <div class="card-price">
+                                by: {{ photo.created_by }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
     {% endif %}
 
+</section>
 {% endblock %}
