@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
 }
 
 .brand-icon {
@@ -102,3 +101,18 @@ footer {
 .card-content{
   padding: 0;
 }
+
+.gallery {
+  column-count: 3;
+}
+
+.gallery > img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .gallery {
+  column-count: 2;
+  }
+} 
