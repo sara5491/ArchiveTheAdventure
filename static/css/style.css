@@ -73,3 +73,18 @@ footer {
     padding: 10px;
     color: white;
   }
+
+.card-image{
+  height: 300px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.photo-image{
+  object-fit: cover;
+  height: 80%;
+}
+
+.card-content{
+  padding: 0;
+}

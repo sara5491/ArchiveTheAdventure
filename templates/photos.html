@@ -22,9 +22,9 @@
     </div>
 
     {% if photos|length > 0 %}
-    <div class="container">
+    <div class="row card-panel">
         {% for photo in photos %}
-        <div class="col-xs-12 col-sm-4">
+        <div class="col s12 m6">
             <div class="card hoverable">
                 <div class="card-image">
                     <img class="photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
@@ -57,10 +57,12 @@
                         <a href="{{ url_for('get_photos') }}" class="modal-close waves-effect waves-white btn-flat">No, take me back!</a> 
                     </div>
                     </div>
+                </div>
                 {% endif %}
             </div>
         </div>
         {% endfor %}
+    </div>
     </div>
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
