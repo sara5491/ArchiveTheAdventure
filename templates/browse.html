@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="uploads" class="row s12">
+    {% for photo in photos %}
+        <div class="col s12 m4 l3 browse-images-container">
+            <img class="photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

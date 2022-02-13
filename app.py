@@ -97,9 +97,11 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    # grab the session user's username from db
     if session["user"]:
         username = mongo.db.users.find_one(
             {"username": session["user"]})["username"]
+    # get the photos uploaded by session user
         photos = list(mongo.db.photos.find(
             {"created_by": session["user"]}))
 
@@ -183,10 +185,10 @@ def delete_photo(photo_id):
     return redirect(url_for("get_photos"))
 
 
-@app.route("/get_categories")
-def get_categories():
-    categories = list(mongo.db.categories.find().sort("category_name", 1))
-    return render_template("categories.html", categories=categories)
+@app.route("/browse")
+def browse():
+    photos = list(mongo.db.photos.find())
+    return render_template("browse.html", photos=photos)
 
 
 if __name__ == "__main__":
