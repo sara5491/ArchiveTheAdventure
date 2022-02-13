@@ -77,12 +77,11 @@ footer {
 .card-image{
   height: 300px;
   overflow: hidden;
-  padding: 0;
 }
 
 .photo-image{
   object-fit: cover;
-  height: 80%;
+  height: 100%;
 }
 
 .card-content{
