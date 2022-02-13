@@ -49,6 +49,7 @@
                         <em>Taken by: {{ photo.created_by }}</em>
                     </p>
                 </div>
+            </div>
                 <div class="card-action center align">
                 {% if session.user|lower == photo.created_by|lower %}
                 <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
@@ -56,21 +57,19 @@
                     <a class="waves-effect waves-light btn modal-trigger grey" href="#deletemodal-{{loop.index}}">Delete</a>
                     <!-- Modal Structure -->
                     <div id="deletemodal-{{loop.index}}" class="modal">
-                    <div class="modal-content">
-                        <h4>Remove a photo?</h4>
-                        <p>Are you sure you want to remove a photo from the database?</p>
+                        <div class="modal-content">
+                            <h4>Remove a photo?</h4>
+                            <p>Are you sure you want to remove a photo from the database?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="modal-close waves-effect waves-white btn-flat">Delete</a>
+                            <a href="{{ url_for('get_photos') }}" class="modal-close waves-effect waves-white btn-flat">Cancel</a> 
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="modal-close waves-effect waves-white btn-flat">Delete</a>
-                        <a href="{{ url_for('get_photos') }}" class="modal-close waves-effect waves-white btn-flat">No, take me back!</a> 
-                    </div>
-                    </div>
-                </div>
                 {% endif %}
-            </div>
+                </div>
         </div>
         {% endfor %}
-    </div>
     </div>
     {% else %}
         <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
