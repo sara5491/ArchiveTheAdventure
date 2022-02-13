@@ -40,8 +40,7 @@
                     </div>
                   </nav>
                 <!-- mobile side navbar -->
-                  <ul class="sidenav" id="mobile-demo">
-                    <li><h4 class="center-align light-blue-text text-darken-4">Archive The Adventure</h4></li>
+                  <ul class="sidenav text-shadow-grey" id="mobile-demo">
                     <li><a href="{{ url_for('get_photos') }}">Home</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                     <li><a href="{{ url_for('get_categories') }}">Photographs</a></li>
@@ -67,7 +66,7 @@
             {% endif %}
         {% endwith %}
     </section>
-  
+
   <main class="container">
     {% block content %}
     {% endblock %}

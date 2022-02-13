@@ -15,6 +15,12 @@
   margin-left: 20px;
 }
 
+.adventure-logo {
+  background: url(../images/adventure.jpg) center center no-repeat;
+  height: 200px;
+  background-size: contain;
+  margin-bottom: 20px;
+}
 
 body {
   background-color: #ecdff0;
