@@ -12,6 +12,14 @@
         </div>
     </div>
 
-
+    <div id="your-photos">
+        <div class="row">
+            <h2 class="h2-profile">Your Photos</h2>
+        </div>
+ 
+        {% if session.user %}
+          <a href="{{ url_for('add_photo') }}" class="btn-small green-btn categories-btn">Add New Photo</a>
+        {% endif %}
+    </div>
 
 {% endblock %}
