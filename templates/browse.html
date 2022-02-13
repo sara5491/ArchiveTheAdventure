@@ -3,7 +3,9 @@
 
 <div class="gallery">
     {% for photo in photos %}
-        <img src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
+        <div>
+            <img class="photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
+        </div>
     {% endfor %}
 </div>
 
