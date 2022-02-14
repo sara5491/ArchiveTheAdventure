@@ -172,8 +172,6 @@ img {
 .hover-img:before,
 .hover-img:after {
   background-color: rgba(0, 0, 0, 0.5);
-  border-top: 32px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   bottom: 0;
