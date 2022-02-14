@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
 /* MAIN BODY */
 *{
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'JetBrains Mono';
+}
+
+.nav-extended {
+  background-color: #EE9B00;
+}
+
+.sidenav {
+  background-color: #CA6702;
 }
 
 .brand-icon {
@@ -23,7 +34,7 @@
 }
 
 body {
-  background-color: #ecdff0;
+  background-color: #E9D8A6;
   color: #140101;
   min-height: 100vh;
   display: flex;
@@ -69,7 +80,7 @@ h4 {
 /* FOOTER */
 footer {
     height: 80px;
-    background-color: indigo;
+    background-color: #EE9B00;
   }
   
   .social-networks {
@@ -85,7 +96,7 @@ footer {
     font-size: 150%;
     margin: 1%;
     padding: 10px;
-    color: white;
+    color: #005F73;
   }
 
 .card-image{
@@ -189,4 +200,8 @@ img {
 
 .hover-img:hover figcaption {
   opacity: 1;
+}
+
+.icon {
+  position: relative;
 }
