@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="decorated deep-purple-text center-align text-margin"><span>CONTACT US</span></h1>
+<h1 class="decorated deep-purple-text center-align text-margin"><span>Contact Us</span></h1>
     <div class="container-fluid display-container">
         <div class="row display-row">
             <form id="contact-form" class="col s12 l8 offset-l2 " method="POST" action="{{ url_for('contact')}}">
                 <div class="card-panel form-card padding-landscape">
                     <!--Email-->
                     <div class="row">
-                        <div class="input-field input-margin col s12">
-                            <i class="fas fa-envelope prefix"></i>
+                        <div class="input-field input-margin col s12 ">
+                            <i class="fas fa-envelope prefix deep-purple-text"></i>
                             <input id="email" name="email" type="email" class="validate" required>
                             <label for="email">Email</label>
                         </div>
@@ -17,14 +17,14 @@
                      <!--Message-->
                      <div class="row">
                         <div class="input-field input-margin col s12">
-                            <i class="fas fa-pen prefix"></i>
+                            <i class="fas fa-pen prefix deep-purple-text"></i>
                             <textarea id="message" name="message" class="materialize-textarea" required></textarea>
                             <label for="message">Your Message...</label>
                         </div>
                     </div>
                     <!--Sent Message -->
                     <div class="row">
-                        <button type="submit" class="col s4 offset-s4 btn-small btn-forms-hover red-btn button-style" value="Send"> <p>Send <i class="fas fa-sign-in-alt hide-on-med-and-down"></i></p>
+                        <button type="submit" class="col s4 offset-s4 btn-large btn-forms-hover button-style deep-purple text-shadow" value="Send"> <p>Send <i class="fas fa-sign-in-alt hide-on-med-and-down"></i></p>
                         </button>
                     </div>
                 </div>

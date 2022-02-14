@@ -70,7 +70,8 @@ h4 {
 }
 
 .flashes h4 {
-    line-height: 2;
+    line-height: 3;
+    color: #CA6702;
 }
 
 .btn-small {
@@ -210,6 +211,7 @@ img {
 .decorated{
   overflow: hidden;
   text-align: center;
+  text-transform: uppercase;
 }
 .decorated > span{
  position: relative;
