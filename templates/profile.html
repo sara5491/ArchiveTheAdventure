@@ -14,11 +14,11 @@
 
     <div id="your-photos">
         <div class="row">
-            <h2 class="h2-profile">Your Photos</h2>
+            <h1 class="decorated center-align deep-purple-text"><span>Your Photos</span></h1>
         </div>
  
         {% if session.user %}
-          <a href="{{ url_for('add_photo') }}" class="btn-small green-btn categories-btn">Add New Photo</a>
+          <div class="add-button"><a href="{{ url_for('add_photo') }}" class="col s4 btn-large deep-purple text-shadow">Add New Photo <i class="fa-solid fa-camera"></i></a></div>
         {% endif %}
     </div>
     

@@ -78,6 +78,14 @@ h4 {
     margin: 5px;
 }
 
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  padding-bottom: 2%;
+}
+
 /* FOOTER */
 footer {
     height: 80px;
@@ -118,14 +126,16 @@ footer {
 img {
   width: 100%;
 }
+
 .photo-grid-container {
   column-count: 5;
   column-width: 300px;
 }
+
 .photo-grid-item {
   margin: 0 auto 15px;
   max-width: 400px;
-  width: 100%;
+  width: 90%;
 }
 
 .hover-img {
