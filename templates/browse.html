@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
+<section>
+    <h3>Browse Gallery</h3>
+</section>
+
+<section class="photo-grid-container">
     {% for photo in photos %}
-    <div class="gallery">
-        <div class="gallery__column">
-            <figure class="gallery__thumb">
-                <img src="{{ photo.image_url }}" alt="{{ photo.photo_name }}" class="gallery__image">
-                <figcaption class="gallery__caption">Testing</figcaption>
-            </figure>
-        </div>
+    <div class="photo-grid-item">
+        <img src="{{ photo.image_url }}" alt="{{ photo.photo_name }}">
     </div>
     {% endfor %}
+</section>
 
 {% endblock %}
