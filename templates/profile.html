@@ -6,7 +6,7 @@
         <div class="col s12 m8 offset-m2">
             <div class="card-panel">
                 <h3 class="center-align deep purple-text text-darken-4">
-                    Welcome {{ username }} <i class="fa-solid fa-hand-peace"></i>
+                    {{ username }}'s profile <i class="fa-solid fa-hand-peace"></i>
                 </h3>
             </div>
         </div>
@@ -31,23 +31,23 @@
                     <img class="photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
                 </div>
                 <div class="card-content">
-                    <div class="card-title center-align title-font">
+                    <div class="card-title center-align title-font orange-text">
                         <h2>{{ photo.photo_name }}</h2>
                     </div>
                     <div class="center-align category-name-font">
-                        <h3> {{ photo.category_name }} </h3><br>
-                        <h3> date taken: {{ photo.date_taken }} </h3>
+                        <h3> {{ photo.category_name }} </h3>
+                        <h5> date taken: {{ photo.date_taken }} </h5>
                     </div>
-                    <p class="created-font">
-                        <em>Taken by: {{ photo.created_by }}</em>
-                    </p>
+                    <h6 class="created-font center-align">
+                        <em>by: {{ photo.created_by }}</em>
+                    </h6>
                 </div>
             </div>
                 <div class="card-action center align">
                 {% if session.user|lower == photo.created_by|lower %}
-                <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green-btn">Edit</a>
+                <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small orange">Edit</a>
                     <!-- Modal Trigger -->
-                    <a class="waves-effect waves-light btn modal-trigger grey" href="#deletemodal-{{loop.index}}">Delete</a>
+                    <a class="waves-effect waves-light btn-small modal-trigger red" href="#deletemodal-{{loop.index}}">Delete</a>
                     <!-- Modal Structure -->
                     <div id="deletemodal-{{loop.index}}" class="modal">
                         <div class="modal-content">
