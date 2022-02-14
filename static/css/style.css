@@ -206,7 +206,7 @@ img {
   position: relative;
 }
 
-
+/* HEADINGS */
 .decorated{
   overflow: hidden;
   text-align: center;
@@ -228,4 +228,8 @@ img {
 }
 .decorated > span:after{
  left: 100%;
+}
+
+.card-panel {
+  color: #4527a0;
 }
