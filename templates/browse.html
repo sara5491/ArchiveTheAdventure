@@ -8,7 +8,13 @@
 <section class="photo-grid-container">
     {% for photo in photos %}
     <div class="photo-grid-item">
-        <img src="{{ photo.image_url }}" alt="{{ photo.photo_name }}">
+        <figure class="hover-img">
+            <img src="{{ photo.image_url }}" alt="{{ photo.photo_name }}">
+            <figcaption>
+                <h3>{{ photo.photo_name }}</h3>
+                <em>Taken by: {{ photo.created_by }}</em>
+            </figcaption>
+        </figure>
     </div>
     {% endfor %}
 </section>
