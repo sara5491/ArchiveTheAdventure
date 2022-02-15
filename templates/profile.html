@@ -45,9 +45,9 @@
             </div>
                 <div class="card-action center align">
                 {% if session.user|lower == photo.created_by|lower %}
-                <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small green lighten-1">Edit</a>
+                <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small light-blue lighten-2">Edit</a>
                     <!-- Modal Trigger -->
-                    <a class="waves-effect waves-light btn-small modal-trigger pink darken-1" href="#deletemodal-{{loop.index}}">Delete</a>
+                    <a class="waves-effect waves-light btn-small modal-trigger pink lighten-2" href="#deletemodal-{{loop.index}}">Delete</a>
                     <!-- Modal Structure -->
                     <div id="deletemodal-{{loop.index}}" class="modal">
                         <div class="modal-content">
