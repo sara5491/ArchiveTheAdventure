@@ -271,7 +271,7 @@ img {
   line-height: 12px;
   padding: 16px 23px;
   position: relative;
-  background-color: transparent;
+  background-color: #f48fb1;
 }
 
 .btn-large:hover {
