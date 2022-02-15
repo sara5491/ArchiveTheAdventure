@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="decorated center-align grey-text text-darken-4"><span>Add Photo</span></h1>
+    <h1 class="decorated center-align grey-text text-darken-4"><span>Add Photo</span></h1>
 
     <div class="row card-panel blue-grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('add_photo') }}">
@@ -50,15 +50,15 @@
                     <i class="fas fa-camera prefix light-blue-text text-darken-1"></i>
                     <input id="image_url" name="image_url" type="text" class="validate" required>
                     <label for="image_url">Image URL</label>
-                    <i class="fas fa-info-circle right tooltipped light-blue-text text-darken-1" data-position="left" data-tooltip="Include an URL image from your cloud storage or 
-                    from the web, right mouse click on the image, choose the 'Copy image address' option and paste it in this field."></i>
+                    <i class="fas fa-info-circle right tooltipped light-blue-text text-darken-1" data-position="left" data-tooltip="Include an URL from your cloud storage or 
+                    from the web. Right click on the image, choose the 'copy image address' option and paste it in this field."></i>
                 </div>
             </div>
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large light-green darken-1 text-shadow">
-                        Add Photo <i class="fas fa-plus-square right"></i>
+                    <button type="submit" class="button-submit btn-large">
+                        <p>Add Photo <i class="fas fa-plus-square right"></i></p>
                     </button>
                 </div>
             </div>
