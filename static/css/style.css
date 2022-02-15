@@ -8,6 +8,19 @@
   font-family: 'JetBrains Mono';
 }
 
+body {
+  background-color: #E9D8A6;
+  color: #140101;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
 .nav-extended {
   background-color: #EE9B00;
 }
@@ -26,23 +39,15 @@
   margin-left: 20px;
 }
 
+#header-logo-section {
+  height: 30vh;
+  margin-top: -30px;
+}
+
 .adventure-logo {
   background: url(../images/header-logo.png) center center no-repeat;
-  height: 300px;
-  background-size: 400px 400px;
-}
-
-body {
-  background-color: #E9D8A6;
-  color: #140101;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-main {
-    flex-grow: 1;
+  height: 50vh;
+  background-size: contain;
 }
 
 h1 {
