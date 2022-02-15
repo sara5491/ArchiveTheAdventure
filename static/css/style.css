@@ -259,7 +259,21 @@ img {
 }
 
 .card-panel {
-  color: #4527a0;
   background-color: aliceblue;
   padding: 8px;
+}
+
+.button-submit {
+  color: #046db5;
+  border: 2px solid #046db5;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 12px;
+  padding: 16px 23px;
+  position: relative;
+  background-color: #40c4ff;
+}
+
+.btn-large:hover {
+  background-color: #80d8ff;
 }
