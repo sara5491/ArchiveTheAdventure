@@ -277,3 +277,19 @@ img {
 .btn-large:hover {
   background-color: #80d8ff;
 }
+
+
+
+@media screen and (max-width:600px) {
+  .pink.lighten-5 {
+    height: 100px;
+  }
+  .prefix ~ label {
+    margin-left: 0;
+    width: 100%;
+  }
+  .input-field.col .prefix ~ label,
+    .input-field.col .prefix ~ .validate ~ label {
+      width: 100%;
+    }
+}
