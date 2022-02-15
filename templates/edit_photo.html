@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Edit Photo</h3>
+    <h1 class="decorated center-align grey-text text-darken-4"><span>Edit Photo</span></h1>
 
     <div class="row card-panel green lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('edit_photo', photo_id=photo._id) }}">
             <!-- contintent selection -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-earth prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-earth prefix light-blue-text text-darken-1"></i>
                     <select id="category_name" name="category_name" class="validate" required>
                       <option value="" disabled>Choose Continent</option>
                         {% for category in categories %}
@@ -25,7 +25,7 @@
             <!-- photo name -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-pencil-alt prefix light-blue-text text-darken-1"></i>
                     <input id="photo_name" name="photo_name" minlength="3" maxlength="20"
                         value="{{ photo.photo_name }}" type="text" class="validate" required>
                     <label for="photo_name">Photo Name</label>
@@ -34,7 +34,7 @@
             <!-- photo description -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-align-left prefix light-blue-text text-darken-1"></i>
                     <textarea id="photo_description" name="photo_description" minlength="5"
                         maxlength="100" class="materialize-textarea validate" required>
                         {{- photo.photo_description -}}
@@ -45,7 +45,7 @@
             <!-- date photo taken -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-calendar-alt prefix light-blue-text text-darken-1"></i>
                     <input id="date_taken" name="date_taken" type="text"
                         value= "{{ photo.date_taken }}" class="datepicker validate" required>
                     <label for="date_taken">Date Taken</label>
@@ -54,10 +54,10 @@
             <!-- photo upload -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-camera prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-camera prefix light-blue-text text-darken-1"></i>
                     <input id="image_url" name="image_url" type="text" value= "{{ photo.image_url }}" class="validate">
                         <label for="image_url">Image URL</label>
-                            <i class="fas fa-info-circle right tooltipped" data-position="left" data-tooltip="Include an URL image from your cloud storage or 
+                            <i class="fas fa-info-circle right tooltipped light-blue-text text-darken-1" data-position="left" data-tooltip="Include an URL image from your cloud storage or 
                             from the web, right mouse click on the image, choose the 'Copy image address' option and paste it in this field."></i>
                 </div>
             </div>
@@ -65,11 +65,11 @@
             <div class="row">
                 <div class="col s12 center-align">
                     <!-- cancel button -->
-                    <a href="{{ url_for('get_photos') }}" class="btn-large red text-shadow">
-                        Cancel <i class="fas fa-times-circle right"></i>
+                    <a href="{{ url_for('get_photos') }}" class="btn-large pink lighten-3 text-shadow">
+                        <p>Cancel <i class="fas fa-times-circle right"></i></p>
                     </a>
-                    <button type="submit" class="btn-large light-green darken-1 text-shadow">
-                        Edit Photo <i class="fas fa-edit right"></i>
+                    <button type="submit" class="btn-large light-blue lighten-2 text-shadow">
+                        <p>Edit Photo <i class="fas fa-edit right"></i></p>
                     </button>
                 </div>
             </div>
