@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card-panel">
-                <h3 class="center-align deep purple-text text-darken-4">
+                <h3 class="center-align light-blue-text text-darken-1">
                     {{ username }}'s profile <i class="fa-solid fa-hand-peace"></i>
                 </h3>
             </div>
@@ -14,11 +14,11 @@
 
     <div id="your-photos">
         <div class="row">
-            <h1 class="decorated center-align deep-purple-text"><span>Your Photos</span></h1>
+            <h1 class="decorated center-align grey-text text-darken-4"><span>Your Photos</span></h1>
         </div>
  
         {% if session.user %}
-          <div class="add-button"><a href="{{ url_for('add_photo') }}" class="col s4 btn-large deep-purple text-shadow">Add New Photo <i class="fa-solid fa-camera"></i></a></div>
+          <div class="add-button"><a href="{{ url_for('add_photo') }}" class="col s4 btn-large light-blue-text text-darken-1 text-shadow">Add New Photo <i class="fa-solid fa-camera"></i></a></div>
         {% endif %}
     </div>
     
@@ -31,10 +31,10 @@
                     <img class="photo-image" src="{{ photo.image_url }}" alt="{{ photo.photo_name}}">
                 </div>
                 <div class="card-content">
-                    <div class="card-title center-align title-font orange-text">
+                    <div class="card-title center-align title-font light-blue-text text-darken-1">
                         <h2>{{ photo.photo_name }}</h2>
                     </div>
-                    <div class="center-align category-name-font">
+                    <div class="center-align category-name-font grey-text text-darken-4">
                         <h3> {{ photo.category_name }} </h3>
                         <h5> date taken: {{ photo.date_taken }} </h5>
                     </div>

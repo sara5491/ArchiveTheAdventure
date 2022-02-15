@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="decorated deep-purple-text center-align text-margin"><span>Contact Us</span></h1>
+<h1 class="decorated grey-text text-darken-4 center-align text-margin"><span>Contact Us</span></h1>
     <div class="container-fluid display-container">
         <div class="row display-row">
             <form id="contact-form" class="col s12 l8 offset-l2 " method="POST" action="{{ url_for('contact')}}">
@@ -9,7 +9,7 @@
                     <!--Email-->
                     <div class="row">
                         <div class="input-field input-margin col s12 ">
-                            <i class="fas fa-envelope prefix deep-purple-text"></i>
+                            <i class="fas fa-envelope prefix light-blue-text text-darken-1"></i>
                             <input id="email" name="email" type="email" class="validate" required>
                             <label for="email">Email</label>
                         </div>
@@ -17,7 +17,7 @@
                      <!--Message-->
                      <div class="row">
                         <div class="input-field input-margin col s12">
-                            <i class="fas fa-pen prefix deep-purple-text"></i>
+                            <i class="fas fa-pen prefix light-blue-text text-darken-1"></i>
                             <textarea id="message" name="message" class="materialize-textarea" required></textarea>
                             <label for="message">Your Message...</label>
                         </div>
