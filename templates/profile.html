@@ -51,12 +51,12 @@
                     <!-- Modal Structure -->
                     <div id="deletemodal-{{loop.index}}" class="modal">
                         <div class="modal-content">
-                            <h4>Remove a photo?</h4>
+                            <h4 class="pink-text">Remove a photo?</h4>
                             <p>Are you sure you want to remove a photo from the database?</p>
                         </div>
                         <div class="modal-footer">
-                            <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="modal-close waves-effect waves-white btn-flat">Delete</a>
                             <a href="{{ url_for('get_photos') }}" class="modal-close waves-effect waves-white btn-flat">Cancel</a> 
+                            <a href="{{ url_for('delete_photo', photo_id=photo._id) }}" class="modal-close pink-text waves-effect waves-white btn-flat">Delete</a>
                         </div>
                     </div>
                 {% endif %}

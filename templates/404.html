@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="header-logo-section">
+    <a href="/">
+        <div class="adventure-logo">
+        </div>
+    </a>
+</section>
+
+<section class="error">
+    <div class="center">
+        <h1>Page Not Found</h1>
+        <h2>Sorry, the page you were looking for doesn't exist</h2>
+    </div>
+    <div class="center-align error-button">
+        <a href="{{ url_for('get_photos') }}" class="btn pink lighten-3">Go Back Home</a>
+    </div>
+</section>
+
+
+{% endblock %}

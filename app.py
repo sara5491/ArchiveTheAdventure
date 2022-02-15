@@ -191,6 +191,13 @@ def browse():
     return render_template("browse.html", photos=photos)
 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    error = 404
+    error_msg = "Page Not Found."
+    return render_template('404.html', error=error, error_msg=error_msg), 404
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
