@@ -1,3 +1,12 @@
+# 7. DEPLOYMENT
+
+## DATABASE DEPLOYMENT
+- Navigate to Mongo DB and log in/sign up
+- Navigate to your ‘Cluster'
+- Click the ‘Connect’ button
+- Select ‘Connect Your Application’
+
+
 # 8. CREDITS
 ## A) CODE SNIPPETS
 - The Code Institute's Mini Project (Task Manager)
@@ -16,11 +25,11 @@
 - All text content was written by myself
 
 ## D) LIBRARIES/TOOLS USED
-- (https://www.remove.bg/) - to make the logo background transparent
-- (https://randomkeygen.com/0) - to create secure passwords
-- (https://werkzeug.palletsprojects.com/en/2.0.x/) - to hash passwords
-- (http://ami.responsivedesign.is/) - to create the mock-up of the website on various devices
-- (https://pythonhosted.org/Flask-Mail/) - to send emails to my gmail account via the contact form
+- [RemoveBG](https://www.remove.bg/) - to make the logo background transparent
+- [RandomKeyGen](https://randomkeygen.com/0) - to create secure passwords
+- [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - to hash passwords
+- [AmIResponsive](http://ami.responsivedesign.is/) - to create a mock-up of the website on various devices
+- [Flask-Mail](https://pythonhosted.org/Flask-Mail/) - to send emails to my gmail account via the contact form
 - HTML5
 - CSS
 - JavaScript
