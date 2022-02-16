@@ -26,6 +26,17 @@ os.environ.setdefault("MAIL_PASSWORD", "your password")
 Add your env.py file and pycache directory to .gitignore.
 
 ## DEPLOYMENT TO HEROKU
+The site is hosted using Heroku, deployed directly from the master branch of GitHub. The deployed site will update automatically as new commits are pushed to the master branch.
+* Create an account in Heroku
+* Click New and choose Create New App from the dropdown menu
+* Choose an App name, which must be unique and choose a region closest to you then click create app.
+* Go to the Deploy tab and click Connect to GithHub.
+* Search for the name of the repository and click Connect.
+* In the list of deployment methods, click 'Github' and link Heroku to your Gitub repository.
+* You can choose Enable Automatic Deploys which will automatically update Heroku each time you commit.
+* Hidden variables such as IP address, SECRET_KEY, MONGO_URI and MONGO_DATABASE need to be recorded in Heroku.
+* Go to Settings, click Reveal Config Vars and fill out the values.
+* When the app is deployed by Heroku correctly, the message will appear saying 'Your app was successfully deployed.’
 
 
 # 8. CREDITS
