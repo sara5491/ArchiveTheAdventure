@@ -64,6 +64,10 @@ h6 {
     text-shadow: 2px 2px 2px rgba(0,0,0,0.8)
 }
 
+.pink.lighten-3 {
+  margin-bottom: 10px;
+}
+
 /* NAV BAR */
 .nav-extended {
   background-color: #40c4ff;
@@ -305,7 +309,7 @@ footer {
     width: 100%;
   }
   .input-field.col .prefix ~ label,
-    .input-field.col .prefix ~ .validate ~ label {
-      width: 100%;
-    }
+  .input-field.col .prefix ~ .validate ~ label {
+    width: 100%;
+  }
 }
