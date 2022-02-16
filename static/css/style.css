@@ -22,35 +22,6 @@ main {
     flex-grow: 1;
 }
 
-.nav-extended {
-  background-color: #40c4ff;
-}
-
-.sidenav {
-  background-color: #80d8ff;
-}
-
-.brand-icon {
-  background-image: url(../images/camera-icon.svg);
-  width: 60px;
-  height: 60px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-left: 20px;
-}
-
-#header-logo-section {
-  height: 30vh;
-  margin-top: -30px;
-}
-
-.adventure-logo {
-  background: url(../images/header-logo.png) center center no-repeat;
-  height: 50vh;
-  background-size: contain;
-}
-
 h1 {
   font-size:2.2rem;
 }
@@ -85,15 +56,52 @@ h6 {
   font-weight: 200;
 }
 
+#category_name {
+  visibility: hidden;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0,0,0,0.8)
 }
 
+/* NAV BAR */
+.nav-extended {
+  background-color: #40c4ff;
+}
+
+.sidenav {
+  background-color: #80d8ff;
+}
+
+.brand-icon {
+  background-image: url(../images/camera-icon.svg);
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+/* LOGO */
+#header-logo-section {
+  height: 30vh;
+  margin-top: -30px;
+}
+
+.adventure-logo {
+  background: url(../images/header-logo.png) center center no-repeat;
+  height: 50vh;
+  background-size: contain;
+}
+
+/* FLASH MESSAGES */
 .flashes h4 {
     line-height: 3;
     color: #046db5;
 }
 
+/* BUTTONS */
 .btn-small {
     margin: 5px;
 }
@@ -108,25 +116,25 @@ h6 {
 
 /* FOOTER */
 footer {
-    height: 80px;
-    background-color: #40c4ff;
-  }
+  height: 80px;
+  background-color: #40c4ff;
+}
   
-  .social-networks {
-    text-align: center;
-    padding: 0;
-  }
+.social-networks {
+  text-align: center;
+  padding: 0;
+}
   
-  .social-networks li {
-    display: inline;
-  }
+.social-networks li {
+  display: inline;
+}
   
-  .social-networks i {
-    font-size: 150%;
-    margin: 1%;
-    padding: 10px;
-    color: #f48fb1;
-  }
+.social-networks i {
+  font-size: 150%;
+  margin: 1%;
+  padding: 10px;
+  color: #f48fb1;
+}
 
 .card-image{
   height: 300px;
@@ -294,8 +302,4 @@ img {
     .input-field.col .prefix ~ .validate ~ label {
       width: 100%;
     }
-}
-
-#category_name {
-  visibility: hidden;
 }
