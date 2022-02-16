@@ -83,6 +83,10 @@ h6 {
   margin-left: 20px;
 }
 
+.icon {
+  position: relative;
+}
+
 /* LOGO */
 #header-logo-section {
   height: 30vh;
@@ -114,28 +118,22 @@ h6 {
   padding-bottom: 2%;
 }
 
-/* FOOTER */
-footer {
-  height: 80px;
-  background-color: #40c4ff;
-}
-  
-.social-networks {
-  text-align: center;
-  padding: 0;
-}
-  
-.social-networks li {
-  display: inline;
-}
-  
-.social-networks i {
-  font-size: 150%;
-  margin: 1%;
-  padding: 10px;
-  color: #f48fb1;
+.button-submit {
+  color: #046db5;
+  border: 2px dashed #000;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 12px;
+  padding: 16px 23px;
+  position: relative;
+  background-color: #f48fb1;
 }
 
+.btn-large:hover {
+  background-color: #80d8ff;
+}
+
+/* IMAGE CARDS */
 .card-image{
   height: 300px;
   overflow: hidden;
@@ -150,7 +148,13 @@ footer {
   padding: 0;
 }
 
-/* GALLERY */
+.card-panel {
+  background-color: aliceblue;
+  padding: 8px;
+}
+
+/* GALLERY 
+hover/overlay adapted from www.30secondsofcode.org/css/s/image-overlay-hover */
 img {
   width: 100%;
 }
@@ -239,57 +243,59 @@ img {
   opacity: 1;
 }
 
-.icon {
-  position: relative;
-}
-
-/* HEADINGS */
-.decorated{
+/* HEADINGS 
+adapted from www.stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side */
+.decorated {
   overflow: hidden;
   text-align: center;
   text-transform: uppercase;
 }
-.decorated > span{
- position: relative;
- display: inline-block;
-}
-.decorated > span:before, .decorated > span:after{
- content: '';
- position: absolute;
- top: 50%;
- border-bottom: 2px dashed;
- width: 591px;
- margin: 0 20px;
-}
-.decorated > span:before{
- right: 100%;
-}
-.decorated > span:after{
- left: 100%;
-}
 
-.card-panel {
-  background-color: aliceblue;
-  padding: 8px;
-}
-
-.button-submit {
-  color: #046db5;
-  border: 2px dashed #000;
-  box-sizing: border-box;
-  font-size: 16px;
-  line-height: 12px;
-  padding: 16px 23px;
+.decorated > span {
   position: relative;
-  background-color: #f48fb1;
+  display: inline-block;
 }
 
-.btn-large:hover {
-  background-color: #80d8ff;
+.decorated > span:before, .decorated > span:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px dashed;
+  width: 591px;
+  margin: 0 20px;
 }
 
+.decorated > span:before {
+  right: 100%;
+}
 
+.decorated > span:after {
+  left: 100%;
+}
 
+/* FOOTER */
+footer {
+  height: 80px;
+  background-color: #40c4ff;
+}
+  
+.social-networks {
+  text-align: center;
+  padding: 0;
+}
+  
+.social-networks li {
+  display: inline;
+}
+  
+.social-networks i {
+  font-size: 150%;
+  margin: 1%;
+  padding: 10px;
+  color: #f48fb1;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width:600px) {
   .pink.lighten-5 {
     height: 100px;
