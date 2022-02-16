@@ -2,7 +2,7 @@
 {% block content %}
 
     <h1 class="decorated center-align grey-text text-darken-4"><span>Edit Photo</span></h1>
-
+    <!-- form for users to edit their photos -->
     <div class="row card-panel pink lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('edit_photo', photo_id=photo._id) }}">
             <!-- contintent selection -->

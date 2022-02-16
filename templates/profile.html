@@ -16,12 +16,12 @@
         <div class="row">
             <h1 class="decorated center-align grey-text text-darken-4"><span>Your Photos</span></h1>
         </div>
- 
+        <!-- button which takes user to 'add photo' page -->
         {% if session.user %}
           <div class="add-button"><a href="{{ url_for('add_photo') }}" class="button-submit col s4 offset-s4 btn-large">Add New Photo <i class="fa-solid fa-camera"></i></a></div>
         {% endif %}
     </div>
-    
+    <!-- gallery of user's own images -->
     {% if photos|length > 0 %}
     <div class="row card-panel">
         {% for photo in photos %}
@@ -44,6 +44,7 @@
                     </h6>
                 </div>
             </div>
+                <!-- edit/delete photo buttons -->
                 <div class="card-action center align">
                 {% if session.user|lower == photo.created_by|lower %}
                 <a href="{{ url_for('edit_photo', photo_id=photo._id)}}" class="btn-small light-blue lighten-2">Edit</a>
