@@ -1,3 +1,31 @@
+# ARCHIVE THE ADVENTURE
+
+The live site can be found at the following link: https://archive-adventure.herokuapp.com
+
+# 1. OVERVIEW
+
+(am i responsive)
+
+This is my 3rd Milestone Project for Code Institute's Diploma in Web Application Development course.
+
+'Archive The Adventure' is a website designed for lovers of photography and travel.
+The platform allows users to upload their photographs and to be inspired by others that do the same.
+
+# 2. USER STORIES
+
+## <em>As a first time user I want to be able to...</em>
+* Navigate the site easily, so that I can find what I need effectively.
+* Have the purpose of the website be clearly evident upon first visit.
+* View images without having to register first, so I can decide whether the site interests me or not.
+* Search the images by keyword or location.
+* Visit a site that is visually appealing and clear to understand.
+* Access the site across all devices and for it to be accessible, even on small screens.
+* Register an account and have a profile where I can keep track of any images I’ve uploaded.
+* Contact the site owner with any questions or comments I may have.
+* Follow/view the various social media accounts of the site.
+
+## <em>As a returning user I want to be able to...</em>
+
 # 7. DEPLOYMENT
 
 ## DATABASE DEPLOYMENT
