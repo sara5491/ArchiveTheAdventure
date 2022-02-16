@@ -1,10 +1,31 @@
 # 7. DEPLOYMENT
 
 ## DATABASE DEPLOYMENT
+The site uses a Mongodb database for data storage.
 - Navigate to Mongo DB and log in/sign up
 - Navigate to your ‘Cluster'
 - Click the ‘Connect’ button
 - Select ‘Connect Your Application’
+- Copy the connection string and paste it in your env.py file (include your dbname and password)
+- To confirm you are connected use the command 'show collection'
+
+Since the env.py file contains sensitive information, it should not be stored in the Github repo.
+So you must create your own, and store the environment variables required to configure the application.
+
+Create an env.py file, and add the following environment variables:
+```
+import os
+os.environ.setdefault("IP", "0.0.0.0")
+os.environ.setdefault("PORT", "5000")
+os.environ.setdefault("SECRET_KEY", "your secret key")
+os.environ.setdefault("MONGO_URI", "your mongodb connection string")
+os.environ.setdefault("MONGO_DBNAME", "your dbname")
+os.environ.setdefault("MAIL_USERNAME", "your email")
+os.environ.setdefault("MAIL_PASSWORD", "your password")
+```
+Add your env.py file and pycache directory to .gitignore.
+
+## DEPLOYMENT TO HEROKU
 
 
 # 8. CREDITS
