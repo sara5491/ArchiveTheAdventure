@@ -26,6 +26,7 @@
                       <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                       <ul class="right hide-on-med-and-down">
                         <li><a href="{{ url_for('get_photos') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
                         <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                         <li><a href="{{ url_for('browse') }}">Browse</a></li>
                       {% if session.user %}  
@@ -42,6 +43,7 @@
                 <!-- mobile side navbar -->
                   <ul class="sidenav text-shadow-grey" id="mobile-demo">
                     <li><a href="{{ url_for('get_photos') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
                     <li><a href="{{ url_for('browse') }}">Browse</a></li>
                   {% if session.user %}  
@@ -90,10 +92,6 @@
               <a href="https://instagram.com" target="_blank" rel="noopener"
                   aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
           </li>
-          <li>
-            <a href="404.html" target="_blank" rel="noopener"
-                aria-label="404 error page not found (opens in a new tab)"><i class="fas fa-bolt"></i></a>
-        </li>
       </ul>
   </footer>
 

@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -293,4 +294,8 @@ img {
     .input-field.col .prefix ~ .validate ~ label {
       width: 100%;
     }
+}
+
+#category_name {
+  visibility: hidden;
 }

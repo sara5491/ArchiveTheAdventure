@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section id="header-logo-section">
+    <a href="/">
+        <div class="adventure-logo">
+        </div>
+    </a>
+</section>
+
+<section class="about">
+    <div class="center">
+        <h1>About Us</h1>
+        <p>info</p><br>
+    </div>
+    <div class="center-align">
+        <a href="{{ url_for('browse') }}" class="btn pink lighten-3">Browse Gallery</a>
+    </div>
+</section>
+
+{% endblock %}

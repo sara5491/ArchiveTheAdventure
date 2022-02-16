@@ -184,6 +184,10 @@ def delete_photo(photo_id):
     flash("Photo Successfully Deleted")
     return redirect(url_for("get_photos"))
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 @app.route("/browse")
 def browse():
