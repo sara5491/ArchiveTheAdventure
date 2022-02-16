@@ -34,6 +34,12 @@ def get_photos():
     return render_template("photos.html", photos=photos)
 
 
+@app.route("/admin")
+def admin():
+    photos = list(mongo.db.photos.find().sort("photo_name", 1))
+    return render_template("admin.html", photos=photos)
+
+
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -183,6 +189,7 @@ def delete_photo(photo_id):
     mongo.db.photos.delete_one({"_id": ObjectId(photo_id)})
     flash("Photo Successfully Deleted")
     return redirect(url_for("get_photos"))
+
 
 @app.route("/about")
 def about():
