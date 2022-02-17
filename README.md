@@ -58,13 +58,13 @@ Potential visitors could also include those that only want to browse images, and
 
 CRUD functionality (Create, Read, Update, and Delete) is required for this project so these are implemented as a part of the essential features.
 
-- CREATE — A function we can call when a new image is being added to the database. The user can supply the values for category_name (continent), photo_name, photo_description, date_taken and image_url.
+- **CREATE** — A function we can call when a new image is being added to the database. The user can supply the values for category_name (continent), photo_name, photo_description, date_taken and image_url.
 
-- READ — A function we can call to retrieve information from the database and display the results of all the images currently available to read in our database. All visitors to the website can browse all images without having to sign up for an account.
+- **READ** — A function we can call to retrieve information from the database and display the results of all the images currently available to read in our database. All visitors to the website can browse all images without having to sign up for an account.
 
-- UPDATE — A function we can call when information about an image needs to be changed. The user can edit the values for category_name (continent), photo_name, photo_description, date_taken and image_url. After the function is called, the corresponding entry in the image database will contain the updated fields. This option is only available to the uploader of the image. The admin user can edit and delete anyone’s images.
+- **UPDATE** — A function we can call when information about an image needs to be changed. The user can edit the values for category_name (continent), photo_name, photo_description, date_taken and image_url. After the function is called, the corresponding entry in the image database will contain the updated fields. This option is only available to the uploader of the image. The admin user can edit and delete anyone’s images.
 
-- DELETE — A function we can call to remove a particular image from the database. This option is only available to the uploader of the image.
+- **DELETE** — A function we can call to remove a particular image from the database. This option is only available to the uploader of the image.
 
 * Responsive on all devices.
 * Ability to register, login and logout.
@@ -102,6 +102,17 @@ CRUD functionality (Create, Read, Update, and Delete) is required for this proje
 - **ADMIN PAGE** (admin.html) - The Admin Page allows the website administrator to add, edit and delete any photos. Only the admin user has access to this page via a link in the navbar.
 
 - **CONTACT PAGE** (contact.html) - The Contact Page allows users send a form to the site owner which contains: an email and message field that are required to be filled in.
+
+### DATABASE
+
+MongoDB will handle all data and collections and a diagram of the structure can be seen below:
+
+
+## SKELETON
+
+### WIREFRAMES
+
+
 
 # 7. DEPLOYMENT
 
