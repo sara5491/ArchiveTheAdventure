@@ -50,7 +50,35 @@ The platform allows users to upload their photographs and to be inspired by othe
 
 ### TARGET AUDIENCE
 The target audience of the site are people who enjoy travelling and taking photos, whether as a casual hobby or as a profession. 
-Potential visitors could also include those that only want to browse images, and not upload their own. The target visitor is not limited by their level of knowledge or skill, or whether they use a top of the range camera or their mobile phone. 
+Potential visitors could also include those that only want to browse images, and not upload their own. The target visitor is not limited by their level of knowledge or skill, or whether they use a top of the range camera or their mobile phone.
+
+## SCOPE
+
+### FUNCTIONAL REQUIREMENTS
+
+CRUD functionality (Create, Read, Update, and Delete) is required for this project so these are implemented as a part of the essential features.
+
+- CREATE — A function we can call when a new image is being added to the database. The user can supply the values for category_name (continent), photo_name, photo_description, date_taken and image_url.
+
+- READ — A function we can call to retrieve information from the database and display the results of all the images currently available to read in our database. All visitors to the website can browse all images without having to sign up for an account.
+
+- UPDATE — A function we can call when information about an image needs to be changed. The user can edit the values for category_name (continent), photo_name, photo_description, date_taken and image_url. After the function is called, the corresponding entry in the image database will contain the updated fields. This option is only available to the uploader of the image. The admin user can edit and delete anyone’s images.
+
+- DELETE — A function we can call to remove a particular image from the database. This option is only available to the uploader of the image.
+
+* Responsive on all devices.
+* Ability to register, login and logout.
+* Full CRUD functionality to Add, Read, Edit and Delete images.
+* A page for users to add images to the platform.
+* A page for users to edit/delete images to the platform.
+* Search by a keyword function so users can search for specific images or locations.
+* 404 page that appears for an invalid URL and a button that takes users back to the Home page.
+* Contact page where users can email the site owner.
+* Admin privileges to edit/delete any images that are offensive/inappropriate.
+* Profile page where users can see all their previously uploaded images.
+
+
+
 
 # 7. DEPLOYMENT
 
