@@ -308,8 +308,15 @@ footer {
     margin-left: 0;
     width: 100%;
   }
-  .input-field.col .prefix ~ label,
-  .input-field.col .prefix ~ .validate ~ label {
-    width: 100%;
+}
+@media screen and (min-width:500px) and (max-width:540px) {
+  .hover-img {
+    max-width: 390px;
+  }
+}
+
+@media screen and (max-width:393px) {
+  .hover-img {
+    max-width: 290px;
   }
 }

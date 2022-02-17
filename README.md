@@ -1,3 +1,52 @@
+- [ARCHIVE THE ADVENTURE](#archive-the-adventure)
+- [1. OVERVIEW](#1-overview)
+- [2. UX](#2-ux)
+  * [USER STORIES](#user-stories)
+    + [<em>As a first time user (or as someone who has not registered) I want to be able to...</em>](#-em-as-a-first-time-user--or-as-someone-who-has-not-registered--i-want-to-be-able-to--em-)
+    + [<em>As a returning user I want to be able to...</em>](#-em-as-a-returning-user-i-want-to-be-able-to--em-)
+    + [<em>As an admin user I want to be able to...</em>](#-em-as-an-admin-user-i-want-to-be-able-to--em-)
+  * [STRATEGY](#strategy)
+    + [SITE OWNER GOALS](#site-owner-goals)
+    + [TARGET AUDIENCE](#target-audience)
+  * [SCOPE](#scope)
+    + [FUNCTIONAL REQUIREMENTS](#functional-requirements)
+    + [CONTENT REQUIREMENTS](#content-requirements)
+  * [STRUCTURE](#structure)
+    + [DATABASE](#database)
+  * [SKELETON](#skeleton)
+    + [WIREFRAMES](#wireframes)
+  * [SURFACE](#surface)
+    + [DESIGN](#design)
+      - [COLOUR PALETTE](#colour-palette)
+      - [TYPOGRAPHY](#typography)
+      - [ICONS & LOGO](#icons---logo)
+- [3. FEATURES](#3-features)
+  * [EXISTING FEATURES](#existing-features)
+    + [Home](#home)
+    + [About Us](#about-us)
+    + [Contact Us](#contact-us)
+    + [Browse Gallery](#browse-gallery)
+    + [Profile](#profile)
+    + [Add Photo](#add-photo)
+    + [Edit Photo](#edit-photo)
+    + [Log Out](#log-out)
+    + [Admin](#admin)
+    + [404 Error](#404-error)
+  * [FUTURE IMPLEMENTATION](#future-implementation)
+- [4. TESTING](#4-testing)
+- [5. DEPLOYMENT](#5-deployment)
+  * [DATABASE DEPLOYMENT](#database-deployment)
+  * [DEPLOYMENT TO HEROKU](#deployment-to-heroku)
+- [6. CREDITS](#6-credits)
+  * [CODE SNIPPETS](#code-snippets)
+  * [MEDIA](#media)
+  * [CONTENT](#content)
+  * [LIBRARIES/TOOLS USED](#libraries-tools-used)
+  * [ACKNOWLEDGEMENTS](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 # ARCHIVE THE ADVENTURE
 
 The live site can be found at the following link: https://archive-adventure.herokuapp.com
@@ -135,7 +184,7 @@ I have used a line drawing of a camera as an icon in the navbar which takes the 
 
 * [Logo mockups](documentation/readme-images/logos.png)
 
-# 4. FEATURES
+# 3. FEATURES
 
 ## EXISTING FEATURES
 
@@ -199,11 +248,11 @@ The admin user can edit/delete all users' photos.
 * A more comprehensive search function.
 
 
-# 5. TESTING
+# 4. TESTING
 
 Testing information can be found in the [TESTING.md](TESTING.md) file.
 
-# 6. DEPLOYMENT
+# 5. DEPLOYMENT
 
 ## DATABASE DEPLOYMENT
 The site uses a Mongodb database for data storage.
@@ -246,7 +295,7 @@ The site is hosted using Heroku, deployed directly from the master branch of Git
 * When the app is deployed by Heroku correctly, the message will appear saying 'Your app was successfully deployed.’
 
 
-# 7. CREDITS
+# 6. CREDITS
 ## CODE SNIPPETS
 - The Code Institute's Mini Project (Task Manager)
 - Hover and text overlay on gallery photos - [30SecondsofCode](www.30secondsofcode.org/css/s/image-overlay-hover)

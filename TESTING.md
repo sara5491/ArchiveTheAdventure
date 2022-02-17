@@ -1,0 +1,5 @@
+- [Encountered Issues](#ecountered-issues)
+- [Code Validation](#code-validation)
+- [Testing User Stories](#testing-user-stories)
+- [Testing Accessibility](#testing-accessibility)
+- [Current Bugs/Future Fixes](#current-bugs)
