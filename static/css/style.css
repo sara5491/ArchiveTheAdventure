@@ -316,3 +316,9 @@ footer {
     max-width: 290px;
   }
 }
+
+@media only screen and (min-width: 601px) {
+  .row .col.m6 {
+    width: 33.3%;
+  }
+}
