@@ -111,6 +111,21 @@ MongoDB will handle all data and collections and a diagram of the structure can 
 ## SKELETON
 
 ### WIREFRAMES
+* [Home page](documentation/wireframes/home.png)
+* [About Us](documentation/wireframes/about.png)
+* [Browse](documentation/wireframes/browse.png)
+* [Profile](documentation/wireframes/profile.png)
+* [Log In](documentation/wireframes/login.png)
+* [Register](documentation/wireframes/register.png)
+* [Contact](documentation/wireframes/contact.png)
+
+## SURFACE
+
+### DESIGN
+I wanted the feel of the website to be relaxed with no overly bright colours. I also wanted the tones to be muted as to not distract too much from the images. 
+
+#### COLOUR PALETTE
+![Colour palette used for website](documentation/readme/colours.png)
 
 
 
