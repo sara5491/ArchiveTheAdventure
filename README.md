@@ -13,7 +13,7 @@ The platform allows users to upload their photographs and to be inspired by othe
 
 # 2. USER STORIES
 
-## <em>As a first time user I want to be able to...</em>
+## <em>As a first time user (or as someone who has not registered) I want to be able to...</em>
 * Navigate the site easily, so that I can find what I need effectively.
 * Have the purpose of the website be clearly evident upon first visit.
 * View images without having to register first, so I can decide whether the site interests me or not.
@@ -25,6 +25,18 @@ The platform allows users to upload their photographs and to be inspired by othe
 * Follow/view the various social media accounts of the site.
 
 ## <em>As a returning user I want to be able to...</em>
+* Log in to the site and view my Profile.
+* Edit and/or delete my images that I’ve previously uploaded to the site.
+* Be prompted as to whether I want to delete my image or not, so I don’t do so by mistake.
+* Be able to see all images I’ve uploaded under my Profile.
+* Browse all images uploaded by other users.
+
+## <em>As an admin user I want to be able to...</em>
+* Add my own images onto the site.
+* Edit/Delete the images others have uploaded in case they are not appropriate.
+
+# 3. UX
+
 
 # 7. DEPLOYMENT
 
