@@ -11,9 +11,11 @@ This is my 3rd Milestone Project for Code Institute's Diploma in Web Application
 'Archive The Adventure' is a website designed for lovers of photography and travel.
 The platform allows users to upload their photographs and to be inspired by others that do the same.
 
-# 2. USER STORIES
+# 2. UX
 
-## <em>As a first time user (or as someone who has not registered) I want to be able to...</em>
+## USER STORIES
+
+### <em>As a first time user (or as someone who has not registered) I want to be able to...</em>
 * Navigate the site easily, so that I can find what I need effectively.
 * Have the purpose of the website be clearly evident upon first visit.
 * View images without having to register first, so I can decide whether the site interests me or not.
@@ -24,19 +26,31 @@ The platform allows users to upload their photographs and to be inspired by othe
 * Contact the site owner with any questions or comments I may have.
 * Follow/view the various social media accounts of the site.
 
-## <em>As a returning user I want to be able to...</em>
-* Log in to the site and view my Profile.
+### <em>As a returning user I want to be able to...</em>
+* Log in to the site and view my profile.
 * Edit and/or delete my images that I’ve previously uploaded to the site.
 * Be prompted as to whether I want to delete my image or not, so I don’t do so by mistake.
-* Be able to see all images I’ve uploaded under my Profile.
+* Be able to see all images I’ve uploaded under my profile.
 * Browse all images uploaded by other users.
 
-## <em>As an admin user I want to be able to...</em>
+### <em>As an admin user I want to be able to...</em>
 * Add my own images onto the site.
 * Edit/Delete the images others have uploaded in case they are not appropriate.
 
-# 3. UX
+## STRATEGY
 
+### SITE OWNER GOALS
+* Create a user-friendly platform which allows photography and travel enthusiasts to inspire each other with their images.
+* Allow users to easily sign up for an account/log in and access their profile.
+* Create a loyal following and community of users who will continuously use the platform.
+* Create an application that is easy to use and fully responsive on all major screen sizes.
+* Implement CRUD (Create, Read, Update, Delete) functionality which allows users to add, edit and delete their images.
+* Implement defensive design through data validation and authentication.
+* Allow for simple design and navigation of the application.
+
+### TARGET AUDIENCE
+The target audience of the site are people who enjoy travelling and taking photos, whether as a casual hobby or as a profession. 
+Potential visitors could also include those that only want to browse images, and not upload their own. The target visitor is not limited by their level of knowledge or skill, or whether they use a top of the range camera or their mobile phone. 
 
 # 7. DEPLOYMENT
 
