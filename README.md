@@ -139,6 +139,15 @@ I have used a line drawing of a camera as an icon in the navbar which takes the 
 
 ## EXISTING FEATURES
 
+### Home
+<details><summary><b>click for home</b></summary>
+
+<p>
+    <img src="documentation/readme-images/features/homepage.png">
+</p>
+
+
+## FUTURE IMPLEMENTATION
 
 
 # 5. TESTING
