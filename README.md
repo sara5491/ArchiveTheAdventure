@@ -106,7 +106,7 @@ CRUD functionality (Create, Read, Update, and Delete) is required for this proje
 ### DATABASE
 
 MongoDB will handle all data and collections and a diagram of the structure can be seen below:
-
+![MongoDB database collections](documentation/readme-images/mongodb.png)
 
 ## SKELETON
 
@@ -151,6 +151,7 @@ Footer has links to all social media accounts.
 ### Contact Us
 Contact Us form which is set up to send an email to archivetheadventure@gmail.com (an email address I made for this project).
 ![Contact Us](documentation/readme-images/features/04contactus.png)
+![Email Account](documentation/readme-images/features/15gmail.png)
 
 ### Browse Gallery
 Name of the image is shown when hovered over - or tapped when on mobile.
@@ -231,7 +232,9 @@ Add your env.py file and pycache directory to .gitignore.
 The site is hosted using Heroku, deployed directly from the master branch of GitHub. The deployed site will update automatically as new commits are pushed to the master branch.
 * Create an account in Heroku
 * Click New and choose Create New App from the dropdown menu
+![Heroku deployment](documentation/readme-images/deployment1.png)
 * Choose an App name, which must be unique and choose a region closest to you then click create app.
+![Heroku deployment](documentation/readme-images/deployment2.png)
 * Go to the Deploy tab and click Connect to GithHub.
 * Search for the name of the repository and click Connect.
 * In the list of deployment methods, click 'Github' and link Heroku to your Gitub repository.
@@ -277,4 +280,4 @@ The site is hosted using Heroku, deployed directly from the master branch of Git
 - Heroku
 
 ## ACKNOWLEDGEMENTS
-- Tutors at Code Institute and members of the Slack community for their continued help and support.
+- Tutors at Code Institute for dealing with my <s>stupid</s> questions and members of the Slack community for their continued help and support.
