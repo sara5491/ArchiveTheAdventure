@@ -4,7 +4,7 @@ The live site can be found at the following link: https://archive-adventure.hero
 
 # 1. OVERVIEW
 
-(am i responsive)
+![Am I Responsive?](documentation/readme-images/amiresponsive.png)
 
 This is my 3rd Milestone Project for Code Institute's Diploma in Web Application Development course.
 
@@ -140,35 +140,48 @@ I have used a line drawing of a camera as an icon in the navbar which takes the 
 ## EXISTING FEATURES
 
 ### Home
+The landing page. Navbar in image shows what the admin user sees when they are logged in.
 ![Homepage](documentation/readme-images/features/01homepage.png)
+Footer has links to all social media accounts.
 ![Homepage footer](documentation/readme-images/features/02homepage.png)
 
 ### About Us
 ![About Us](documentation/readme-images/features/03aboutus.png)
 
 ### Contact Us
+Contact Us form which is set up to send an email to archivetheadventure@gmail.com (an email address I made for this project).
 ![Contact Us](documentation/readme-images/features/04contactus.png)
 
 ### Browse Gallery
+Name of the image is shown when hovered over - or tapped when on mobile.
 ![Browse the Gallery](documentation/readme-images/features/05gallery.png)
 
 ### Profile
+Users can either edit/delete from the main photos page or from their profile.
 ![Profile Page](documentation/readme-images/features/06profile.png)
 
 ### Add Photo
 ![Add Photo](documentation/readme-images/features/07addphoto.png)
+Calendar doesn't allow users to choose a future date.
 ![Date Taken](documentation/readme-images/features/08calendar.png)
+Users must choose a continent from the dropdown where the image was taken.
 ![Category Dropdown](documentation/readme-images/features/09continent.png)
 
 ### Edit Photo
 ![Edit Photo](documentation/readme-images/features/13editphoto.png)
+A modal is triggered when user clicks 'delete' so they are prompted to confirm deletion or they can exit back to the homepage.
 ![Delete Modal Trigger](documentation/readme-images/features/10deletemodal.png)
 
 ### Log Out
 ![Log Out](documentation/readme-images/features/11logout.png)
 
 ### Admin
+The admin user can edit/delete all users' photos.
 ![Admin](documentation/readme-images/features/12admin-all.png)
+
+### 404 Error
+404 error page when incorrect link is clicked.
+![404 Error](documentation/readme-images/features/14error.png)
 
 ## FUTURE IMPLEMENTATION
 
@@ -240,6 +253,7 @@ The site is hosted using Heroku, deployed directly from the master branch of Git
 - [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - to hash passwords
 - [AmIResponsive](http://ami.responsivedesign.is/) - to create a mock-up of the website on various devices
 - [Flask-Mail](https://pythonhosted.org/Flask-Mail/) - to send emails to my gmail account via the contact form
+- [ImgBB](https://imgbb.com/) - image hosting
 - HTML5
 - CSS
 - JavaScript
