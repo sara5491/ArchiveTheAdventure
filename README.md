@@ -77,7 +77,19 @@ CRUD functionality (Create, Read, Update, and Delete) is required for this proje
 * Admin privileges to edit/delete any images that are offensive/inappropriate.
 * Profile page where users can see all their previously uploaded images.
 
+### CONTENT REQUIREMENTS
+* Most of the site content is provided by its users.
+* All images are shown on the home page so it is clear what the purpose of the site is when a user first enters it.
 
+## STRUCTURE
+
+- **HOME/PHOTOS PAGE** (get_photos.html) - The Home Page of the website contains all image cards for all users to view. There is a sticky navbar at the top which is shown on all pages and contains the logo and links to all other pages of the site. At the bottom of the page there is a footer that is also placed on all other pages, which contains social media links.
+
+- **ABOUT US** (about.html) - This clearly outlines the purpose of the site and encourages users to sign up.
+
+- **PHOTOS PAGE** - (photos.html) - This page allows users to easily see all images that have been uploaded to the site. The name of the photo and the username of who uploaded it is shown when the image is hovered over.
+
+- **LOG IN PAGE** (login.html) - The Log In page allows users who already have an account to log in to their profile. When the user logs in successfully, they are redirected to their unique profile page where they can view, edit and delete their images. A 'Log Out’ tab is visible and the Register is hidden once a user logs in.
 
 
 # 7. DEPLOYMENT
