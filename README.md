@@ -133,15 +133,15 @@ I chose the font 'JetBrains Mono' from Google Fonts for all typography on the si
 #### ICONS & LOGO
 I have used a line drawing of a camera as an icon in the navbar which takes the user to the homepage when clicked on. I overlayed this same icon onto the main logo of the site to create consistency. The logo brings together the two main elements of the platform - travel (or adventure) and photography.
 
-* [Logo mockups](documentation/readme-images/logo-ideas.pdf)
+* [Logo mockups](documentation/readme-images/logos.png)
 
 # 4. FEATURES
 
 ## EXISTING FEATURES
 
 ### Home
-* [Homepage](documentation/readme-images/features/1.homepage.png)
-* [Homepage footer](documentation/readme-images/features/2.homepage2.png)
+![Homepage](documentation/readme-images/features/01homepage.png)
+![Homepage footer](documentation/readme-images/features/02homepage.png)
 
 ## FUTURE IMPLEMENTATION
 
