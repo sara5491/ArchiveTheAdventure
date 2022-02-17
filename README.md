@@ -125,11 +125,25 @@ MongoDB will handle all data and collections and a diagram of the structure can 
 I wanted the feel of the website to be relaxed with no overly bright colours. I also wanted the tones to be muted as to not distract too much from the images. 
 
 #### COLOUR PALETTE
-![Colour palette used for website](documentation/readme/colours.png)
+![Colour palette used for website](documentation/readme-images/colours.png)
+
+#### TYPOGRAPHY
+I chose the font 'JetBrains Mono' from Google Fonts for all typography on the site. 
+
+#### ICONS & LOGO
+I have used a line drawing of a camera as an icon in the navbar which takes the user to the homepage when clicked on. I overlayed this same icon onto the main logo of the site to create consistency. The logo brings together the two main elements of the platform - travel (or adventure) and photography.
+
+* [Logo mockups](documentation/readme-images/logo-ideas.pdf)
+
+# 4. FEATURES
+
+## EXISTING FEATURES
 
 
 
-# 7. DEPLOYMENT
+# 5. TESTING
+
+# 6. DEPLOYMENT
 
 ## DATABASE DEPLOYMENT
 The site uses a Mongodb database for data storage.
@@ -170,24 +184,25 @@ The site is hosted using Heroku, deployed directly from the master branch of Git
 * When the app is deployed by Heroku correctly, the message will appear saying 'Your app was successfully deployed.’
 
 
-# 8. CREDITS
-## A) CODE SNIPPETS
+# 7. CREDITS
+## CODE SNIPPETS
 - The Code Institute's Mini Project (Task Manager)
 - Hover and text overlay on gallery photos - [30SecondsofCode](www.30secondsofcode.org/css/s/image-overlay-hover)
 - Horizontal line on either side of headings - [Stackoverflow](www.stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side)
 - Cards for images/navbar/delete modal - [MaterializeCSS](https://materializecss.com/)
 
-## B) MEDIA
+## MEDIA
 - Mountain/sky logo was created on [Canva](https://www.canva.com/help/article/licenses-copyright-commercial-use/)
 - Camera icon in nabber was obtained from [FreeSVG](freesvg.org)
 - Button icons were from [Font Awesome](https://fontawesome.com/)
 - Website’s favicon was from [Favicon](https://favicon.io/)
+- Google Fonts library
 - All photographs were taken by myself
 
-## C) CONTENT
+## CONTENT
 - All text content was written by myself
 
-## D) LIBRARIES/TOOLS USED
+## LIBRARIES/TOOLS USED
 - [RemoveBG](https://www.remove.bg/) - to make the logo background transparent
 - [RandomKeyGen](https://randomkeygen.com/0) - to create secure passwords
 - [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - to hash passwords
@@ -203,5 +218,5 @@ The site is hosted using Heroku, deployed directly from the master branch of Git
 - GitPod
 - Heroku
 
-## E) ACKNOWLEDGEMENTS
+## ACKNOWLEDGEMENTS
 - Tutors at Code Institute and members of the Slack community for their continued help and support.
