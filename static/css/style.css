@@ -304,10 +304,6 @@ footer {
   .pink.lighten-5 {
     height: 100px;
   }
-  .prefix ~ label {
-    margin-left: 0;
-    width: 100%;
-  }
 }
 @media screen and (min-width:500px) and (max-width:540px) {
   .hover-img {
