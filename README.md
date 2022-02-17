@@ -87,10 +87,21 @@ CRUD functionality (Create, Read, Update, and Delete) is required for this proje
 
 - **ABOUT US** (about.html) - This clearly outlines the purpose of the site and encourages users to sign up.
 
-- **PHOTOS PAGE** - (photos.html) - This page allows users to easily see all images that have been uploaded to the site. The name of the photo and the username of who uploaded it is shown when the image is hovered over.
+- **BROWSE IMAGES PAGE** - (browse.html) - This page allows users to easily see all images that have been uploaded to the site. The name of the photo and the username of who uploaded it is shown when the image is hovered over.
 
 - **LOG IN PAGE** (login.html) - The Log In page allows users who already have an account to log in to their profile. When the user logs in successfully, they are redirected to their unique profile page where they can view, edit and delete their images. A 'Log Out’ tab is visible and the Register is hidden once a user logs in.
 
+- **REGISTER PAGE** (register.html) - The Register page allows users to create an account by entering a unique username and password. When the user registers successfully, they are redirected to their profile page where they can add, edit, delete and view existing images.
+
+- **PROFILE PAGE** (profile.html) - The Profile Page is unique to each user and is available after the user registers and logs in successfully. They can add, edit, delete and view their existing images. An ‘Add New Photo’ button is available at the top of the screen which takes users to the add_photo page.
+
+- **ADD PHOTO PAGE** (add_photo.html) - The Add Photo page allows users to add a new image by submitting a form. The user needs to enter the required fields for photo_name, photo_description, category_name, date_taken and image_url. The photo is displayed on the Home page, the Browse Gallery page and the Profile page.
+
+- **EDIT PHOTO PAGE** (edit_photo.html) - The Edit Photo page allows users to edit or delete any of their uploaded photos. The Cancel button takes them back to the home page.
+
+- **ADMIN PAGE** (admin.html) - The Admin Page allows the website administrator to add, edit and delete any photos. Only the admin user has access to this page via a link in the navbar.
+
+- **CONTACT PAGE** (contact.html) - The Contact Page allows users send a form to the site owner which contains: an email and message field that are required to be filled in.
 
 # 7. DEPLOYMENT
 
