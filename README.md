@@ -201,6 +201,8 @@ The admin user can edit/delete all users' photos.
 
 # 5. TESTING
 
+Testing information can be found in the [TESTING.md](TESTING.md) file.
+
 # 6. DEPLOYMENT
 
 ## DATABASE DEPLOYMENT
