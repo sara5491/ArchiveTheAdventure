@@ -1,16 +1,15 @@
 - [Encountered Issues](#ecountered-issues)
-- [Code Validation](#code-validation)
+
 - [Testing User Stories](#testing-user-stories)
 - [Testing Accessibility](#testing-accessibility)
-- [Current Bugs/Future Fixes](#current-bugs)
+- [Code Validation](#code-validation)
+- [Known Issues](#known-issues)
 
-
-
-
-## Lighthouse Testing
+## TESTING ACCESSIBILITY
 
 ### Home Page Results
 ![Screenshot of lighthouse results for Home Page](documentation/lighthouse-screenshots/home.png)
+
 The performance rating was low for the home page and Lighthouse suggested saving images in a file format other than .png or .jpg but this is not ideal as these formats are what most people save their photos as.
 
 ### About Us Results
@@ -25,8 +24,24 @@ The performance rating was low for the home page and Lighthouse suggested saving
 ### Log In Results
 ![Screenshot of lighthouse results for Log In](documentation/lighthouse-screenshots/login.png)
 
-### Profile Page Results
-![Screenshot of lighthouse results for Profile Page](documentation/lighthouse-screenshots/profile.png)
+### Admin Page Results
+![Screenshot of lighthouse results for Profile Page](documentation/lighthouse-screenshots/admin.png)
 
 ### Add Photo Results
 ![Screenshot of lighthouse results for Add Photo](documentation/lighthouse-screenshots/addphoto.png)
+
+
+## CODE VALIDATION
+
+### CSS VALIDATION
+Passed The W3C CSS Validation Service without any issues.
+
+### HTML VALIDATION
+There were a couple of issues when using The W3C Markup Validation Service however these were seen as warnings rather than major errors.
+
+
+## KNOWN ISSUES
+
+* On mobile devices, the search label currently covers two lines.
+![Screenshot of search label](documentation/search-issue.png)
+
