@@ -143,6 +143,33 @@ I have used a line drawing of a camera as an icon in the navbar which takes the 
 ![Homepage](documentation/readme-images/features/01homepage.png)
 ![Homepage footer](documentation/readme-images/features/02homepage.png)
 
+### About Us
+![About Us](documentation/readme-images/features/03aboutus.png)
+
+### Contact Us
+![Contact Us](documentation/readme-images/features/04contactus.png)
+
+### Browse Gallery
+![Browse the Gallery](documentation/readme-images/features/05gallery.png)
+
+### Profile
+![Profile Page](documentation/readme-images/features/06profile.png)
+
+### Add Photo
+![Add Photo](documentation/readme-images/features/07addphoto.png)
+![Date Taken](documentation/readme-images/features/08calendar.png)
+![Category Dropdown](documentation/readme-images/features/09continent.png)
+
+### Edit Photo
+![Edit Photo](documentation/readme-images/features/13editphoto.png)
+![Delete Modal Trigger](documentation/readme-images/features/10deletemodal.png)
+
+### Log Out
+![Log Out](documentation/readme-images/features/11logout.png)
+
+### Admin
+![Admin](documentation/readme-images/features/12admin-all.png)
+
 ## FUTURE IMPLEMENTATION
 
 
