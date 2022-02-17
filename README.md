@@ -164,6 +164,7 @@ Users can either edit/delete from the main photos page or from their profile.
 ![Add Photo](documentation/readme-images/features/07addphoto.png)
 Calendar doesn't allow users to choose a future date.
 ![Date Taken](documentation/readme-images/features/08calendar.png)
+
 Users must choose a continent from the dropdown where the image was taken.
 ![Category Dropdown](documentation/readme-images/features/09continent.png)
 
@@ -184,6 +185,17 @@ The admin user can edit/delete all users' photos.
 ![404 Error](documentation/readme-images/features/14error.png)
 
 ## FUTURE IMPLEMENTATION
+* Enable users to comment on images.
+* Enable users to rate images.
+* Enable file upload rather than using an image URL.
+* Enable users to change their username and/or password if they wish.
+* Enable a 'forgotten your password' system.
+* Confirmation of password when a user registers or logs in to the site.
+* Pagination on home page and gallery page to stop endless scrolling.
+* Inappropriate/offensive image filter. Rejects the image and stops users adding it to the database.
+* Allow users to click on a photo and it will take them to a page which shows the photo at its full size.
+* Allow admin to manage user accounts.
+* A more comprehensive search function.
 
 
 # 5. TESTING
