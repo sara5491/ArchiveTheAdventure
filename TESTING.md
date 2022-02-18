@@ -41,10 +41,20 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 
 ### Returning User
 * Log in to the site and view my profile.
+![Screenshot of user profile](documentation/user-stories/returning-profile.png)
+
 * Edit and/or delete my images that I’ve previously uploaded to the site.
+![Screenshot of edit/delete image buttons](documentation/user-stories/returning-edit.png)
+
 * Be prompted as to whether I want to delete my image or not, so I don’t do so by mistake.
+![Screenshot of delete modal](documentation/user-stories/returning-delete.png)
+
 * Be able to see all images I’ve uploaded under my profile.
+![Screenshot of profile](documentation/user-stories/returning-images.png)
+
 * Browse all images uploaded by other users.
+![Screenshot of all images uploaded by others](documentation/user-stories/returning-view.png)
+![Screenshot of gallery](documentation/user-stories/returning-gallery.png)
 
 
 ### Admin User
@@ -53,8 +63,6 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 
 * Edit/Delete the images others have uploaded in case they are not appropriate.
 ![Screenshot of all photos that admin can edit/delete](documentation/user-stories/admin-add.png)
-
-
 
 ## TESTING ACCESSIBILITY
 
