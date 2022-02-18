@@ -66,7 +66,7 @@ There were a couple of issues when using The W3C Markup Validation Service howev
  * [Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Farchive-adventure.herokuapp.com%2F)
  * [Browse](https://validator.w3.org/nu/?doc=https%3A%2F%2Farchive-adventure.herokuapp.com%2Fbrowse)
  * [About](https://validator.w3.org/nu/?doc=https%3A%2F%2Farchive-adventure.herokuapp.com%2Fabout)
- 
+ * [Contact](https://validator.w3.org/nu/?doc=https%3A%2F%2Farchive-adventure.herokuapp.com%2Fcontact)
 
 ## KNOWN ISSUES
 
