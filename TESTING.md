@@ -22,6 +22,10 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 
 ![Screenshot of image cards fixed layout](documentation/cards-fixed-size.png)
 
+- I had a few issues of some of the cards being in the wrong place. I found this was due to a couple of stray 'end div' tags.
+
+
+
 ## TESTING USER STORIES
 
 
@@ -59,7 +63,7 @@ Passed The W3C CSS Validation Service without any issues.
 
 ### HTML VALIDATION
 There were a couple of issues when using The W3C Markup Validation Service however these were seen as warnings rather than major errors.
-
+ * [Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Farchive-adventure.herokuapp.com%2F)
 
 ## KNOWN ISSUES
 
