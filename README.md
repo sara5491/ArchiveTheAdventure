@@ -246,6 +246,7 @@ The admin user can edit/delete all users' photos.
 * Allow users to click on a photo and it will take them to a page which shows the photo at its full size.
 * Allow admin to manage user accounts.
 * A more comprehensive search function.
+* Allow users to crop/resize their image so they can change the focus point.
 
 
 # 4. TESTING

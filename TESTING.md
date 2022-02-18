@@ -25,10 +25,33 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 - I had a few issues of some of the cards being in the wrong place. I found this was due to a couple of stray 'end div' tags.
 
 
-
 ## TESTING USER STORIES
 
+### First Time User
+* Navigate the site easily, so that I can find what I need effectively.
+* Have the purpose of the website be clearly evident upon first visit.
+* View images without having to register first, so I can decide whether the site interests me or not.
+* Search the images by keyword or location.
+* Visit a site that is visually appealing and clear to understand.
+* Access the site across all devices and for it to be accessible, even on small screens.
+* Register an account and have a profile where I can keep track of any images I’ve uploaded.
+* Contact the site owner with any questions or comments I may have.
+* Follow/view the various social media accounts of the site.
 
+
+### Returning User
+* Log in to the site and view my profile.
+* Edit and/or delete my images that I’ve previously uploaded to the site.
+* Be prompted as to whether I want to delete my image or not, so I don’t do so by mistake.
+* Be able to see all images I’ve uploaded under my profile.
+* Browse all images uploaded by other users.
+
+
+### Admin User
+* Add my own images onto the site.
+![Screenshot of admin profile](documentation/user-stories/admin-add.png)
+* Edit/Delete the images others have uploaded in case they are not appropriate.
+![Screenshot of all photos that admin can edit/delete](documentation/user-stories/admin-add.png)
 
 ## TESTING ACCESSIBILITY
 
