@@ -29,14 +29,30 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 
 ### First Time User
 * Navigate the site easily, so that I can find what I need effectively.
-* Have the purpose of the website be clearly evident upon first visit.
+![Screenshot of navbar](documentation/user-stories/first-navbar.png)
+
 * View images without having to register first, so I can decide whether the site interests me or not.
+![Screenshot of gallery page](documentation/user-stories/first-view.png)
+
 * Search the images by keyword or location.
+![Screenshot of search bar](documentation/user-stories/first-search.png)
+
 * Visit a site that is visually appealing and clear to understand.
+![Screenshot of homepage](documentation/user-stories/first-visual.png)
+
+![Screenshot of about us page](documentation/user-stories/first-clear.png)
+
 * Access the site across all devices and for it to be accessible, even on small screens.
+![Screenshot of site on mobile device](documentation/user-stories/first-responsive.png)
+
 * Register an account and have a profile where I can keep track of any images I’ve uploaded.
+![Screenshot of account signup page](documentation/user-stories/first-register.png)
+
 * Contact the site owner with any questions or comments I may have.
+![Screenshot of contact us form](documentation/user-stories/first-contact.png)
+
 * Follow/view the various social media accounts of the site.
+![Screenshot of footer with social links](documentation/user-stories/first-socials.png)
 
 
 ### Returning User
