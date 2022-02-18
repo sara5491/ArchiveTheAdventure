@@ -20,6 +20,12 @@ I discovered it was because I needed to have MFA with my gmail account. After se
 
 I (finally) worked out it was due to Materialize setting the width at 50% and I needed to overwrite this and once I changed the width to 33%, the cards looked fine.
 
+![Screenshot of image cards fixed layout](documentation/cards-fixed-size.png)
+
+## TESTING USER STORIES
+
+
+
 ## TESTING ACCESSIBILITY
 
 ### Home Page Results
