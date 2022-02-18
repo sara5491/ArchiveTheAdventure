@@ -50,8 +50,11 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 ### Admin User
 * Add my own images onto the site.
 ![Screenshot of admin profile](documentation/user-stories/admin-add.png)
+
 * Edit/Delete the images others have uploaded in case they are not appropriate.
 ![Screenshot of all photos that admin can edit/delete](documentation/user-stories/admin-add.png)
+
+
 
 ## TESTING ACCESSIBILITY
 
@@ -94,8 +97,10 @@ There were a couple of issues when using The W3C Markup Validation Service howev
 ## KNOWN ISSUES
 
 * On mobile devices, the search label currently covers two lines.
+
 ![Screenshot of search label](documentation/search-issue.png)
 
 * The calendar cuts off the last letter of some months.
+
 ![Screenshot of calendar dropdown](documentation/calendar-cutoff.png)
 
