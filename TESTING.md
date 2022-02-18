@@ -136,7 +136,7 @@ There were a couple of issues when using The W3C Markup Validation Service howev
 
 ## KNOWN ISSUES
 
-* On mobile devices, the search label currently covers two lines.
+* On some smaller devices, the search label currently covers two lines.
 
 ![Screenshot of search label](documentation/search-issue.png)
 
