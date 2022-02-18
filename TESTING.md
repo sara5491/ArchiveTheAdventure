@@ -29,55 +29,71 @@ I (finally) worked out it was due to Materialize setting the width at 50% and I 
 
 ### First Time User
 * Navigate the site easily, so that I can find what I need effectively.
+
 ![Screenshot of navbar](documentation/user-stories/first-navbar.png)
 
 * View images without having to register first, so I can decide whether the site interests me or not.
+
 ![Screenshot of gallery page](documentation/user-stories/first-view.png)
 
 * Search the images by keyword or location.
+
 ![Screenshot of search bar](documentation/user-stories/first-search.png)
 
 * Visit a site that is visually appealing and clear to understand.
+
 ![Screenshot of homepage](documentation/user-stories/first-visual.png)
 
 ![Screenshot of about us page](documentation/user-stories/first-clear.png)
 
 * Access the site across all devices and for it to be accessible, even on small screens.
+
 ![Screenshot of site on mobile device](documentation/user-stories/first-responsive.png)
 
 * Register an account and have a profile where I can keep track of any images I’ve uploaded.
+
 ![Screenshot of account signup page](documentation/user-stories/first-register.png)
 
 * Contact the site owner with any questions or comments I may have.
+
 ![Screenshot of contact us form](documentation/user-stories/first-contact.png)
 
 * Follow/view the various social media accounts of the site.
+
 ![Screenshot of footer with social links](documentation/user-stories/first-socials.png)
 
 
 ### Returning User
 * Log in to the site and view my profile.
+
 ![Screenshot of user profile](documentation/user-stories/returning-profile.png)
 
 * Edit and/or delete my images that I’ve previously uploaded to the site.
+
 ![Screenshot of edit/delete image buttons](documentation/user-stories/returning-edit.png)
 
 * Be prompted as to whether I want to delete my image or not, so I don’t do so by mistake.
+
 ![Screenshot of delete modal](documentation/user-stories/returning-delete.png)
 
 * Be able to see all images I’ve uploaded under my profile.
+
 ![Screenshot of profile](documentation/user-stories/returning-images.png)
 
 * Browse all images uploaded by other users.
+
 ![Screenshot of all images uploaded by others](documentation/user-stories/returning-view.png)
+
 ![Screenshot of gallery](documentation/user-stories/returning-gallery.png)
 
 
 ### Admin User
 * Add my own images onto the site.
+
 ![Screenshot of admin profile](documentation/user-stories/admin-add.png)
 
 * Edit/Delete the images others have uploaded in case they are not appropriate.
+
 ![Screenshot of all photos that admin can edit/delete](documentation/user-stories/admin-add.png)
 
 ## TESTING ACCESSIBILITY
