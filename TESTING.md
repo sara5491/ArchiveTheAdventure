@@ -1,9 +1,24 @@
 - [Encountered Issues](#ecountered-issues)
-
 - [Testing User Stories](#testing-user-stories)
 - [Testing Accessibility](#testing-accessibility)
 - [Code Validation](#code-validation)
 - [Known Issues](#known-issues)
+
+## ENCOUNTERED ISSUES
+
+I came across many(!) issues during the creation of my site. Most that have been dealt with but there are some still ongoing which are noted at the end of this section.
+
+- After using Flask Mail to try and connect the contact form with my gmail account, I kept getting this issue -
+
+![Screenshot of error page](documentation/flask-mail.png)
+
+I discovered it was because I needed to have MFA with my gmail account. After setting this up, I was able to receive emails in my account.
+
+- I had issues with the layout of my image cards after logging in and once the edit/delete buttons appeared.
+
+![Screenshot of image cards layout issue](documentation/card-issue.png)
+
+I (finally) worked out it was due to Materialize setting the width at 50% and I needed to overwrite this and once I changed the width to 33%, the cards looked fine.
 
 ## TESTING ACCESSIBILITY
 
@@ -44,4 +59,7 @@ There were a couple of issues when using The W3C Markup Validation Service howev
 
 * On mobile devices, the search label currently covers two lines.
 ![Screenshot of search label](documentation/search-issue.png)
+
+* The calendar cuts off the last letter of some months.
+![Screenshot of calendar dropdown](documentation/calendar-cutoff.png)
 
